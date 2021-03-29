@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- aos animation -->
+    <link href="images/favicon.png" rel="icon"> <!-- Favicons -->
+    <link href="style.css" rel="stylesheet">
+    <title>Portfolio Soulainah Fitas</title>
+</head>
+<body data-spy="scroll" data-target=".navbar"> <!-- scroll couleur suit -->
+    <div class="container-fluid"> <!-- debut container-fluid -->
+        <div class="row min-vh-100 flex-column flex-md-row"> <!-- debut row -->
+<!--================================== Navside menu fixe à gauche ==================================-->
+            <aside class="col-12 col-md-12 col-xl-2 p-0 bg-dark"> <!--je veux fixed-top en navbar haut-->
+                <nav class="navbar navbar-expand-xl navbar-dark bd-dark flex-md-column flex-row align-items-center py-2 text-center sticky-top" id="sidebar"> <!-- sidebar-->
+                    <div class="text-center">
+                        <img src="images/photo_soulainah.png" alt="photo de profil" class=" photop img-fluid rounded-circle my-4 p-1 d-none d-xl-block shadow">
+                        <img class="logonom" src="images/logo_Soulainah_Fitas.png" alt="logo">
+                        <div>
+                            <p class="musique">Un peu de musique ?</p>
+                            <audio id="track"> <!-- bouton musique-->
+                                <source src="USERSONG004.mp3" type="audio/mpeg" />
+                            </audio>
+                            <div id="player-container">
+                                <div id="play-pause" class="play">Play</div>
+                            </div> <!-- bouton musique-->
+                        </div>
+                    </div>
+                    <button type="button" class="navbar-toggler border-0 order-1 " data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse order-last " id="nav">
+                        <ul class="reseaux navbar-nav flex-column w-100 justify-content-center">
+                            <li>
+                                <a href="mailto:soulainah.peer@gmail.com" title="E-mail"><img src="logo/mail.png" alt="logo d'une enveloppe"></a>
+                                <a href="https://www.google.com/maps/place/Gare+D'ermont+-+Eaubonne/@48.9804279,2.2711963,15z/data=!4m5!3m4!1s0x0:0x28c3efec4dc58c81!8m2!3d48.9804279!4d2.2711963" title="Localisation" target="_blank"><img src="logo/localisation.png" alt="logo d'un point de localisation"></a>
+                                <a href="https://github.com/Soulainah/" title="Github" target="_blank"><img src="logo/github.png" alt="logo de GITHUB"></a>
+                                <a href="https://www.linkedin.com/in/soulainah-fitas/" title="Linkedin" target="_blank"><img src="logo/linkedin.png" alt="logo de LINKEDIN"></a>
+                                <a href="Workspace/CV Soulainah  FITAS.pdf" title="CV_PDF" target="_blank"><img src="logo/pdf.png" alt="logo d'un PDF"></a></p>                       
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse order-last" id="nav">
+                        <ul class="navtxt navbar-nav flex-column w-100">
+                            <li class="nav-item">
+                                <a href="#propos" class="nav-link active">Bienvenue</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#competences" class="nav-link active">Mes Compétences</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#experiences" class="nav-link active">Mes Expériences</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#projets" class="nav-link active">Mes Projets</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
+<!--================================== partie centrale ================================== -->
+            <main class="col flex-grow-1 pl-0 pr-0">
+                <div class="fondbeaudeau container-fluid col-12 d-none d-md-block pr-0">
+                    <div class="bandeau row text-content col-12 d-none d-md-block">
+                        <div class="titre">
+                            <span class="texte1">SOULAINAH FITAS</span>
+                            <span class="texte2">Développeuse WEB</span>
+                        </div>
+                    </div>
+                </div>
+<!--==================================  Presentation ==================================-->
+                <div class="container" id="propos">
+                    <h2 class="text-center m-5 display-4 ">Bienvenue sur mon portfolio</h2>
+                    <div class="row align-items-center">
+                        <div class=" textepres col-sm-12 col-md-12 col-lg-6"> <!-- debut div texte  -->
+                            <blockquote class="blockstyle"> <span class="triangle"></span><p>Après une reconversion dans le monde de l'informatique en intégrant la formation "Développeuse Web et Web Mobile" au sein de l'organisme DESCODEUSES, je me suis découverte une réelle passion pour le code. Actuellement encore en formation, j'ai pour projet de faire de cette passion mon métier.<br/>
+                                Chez DESCODEUSES, on nous apprend à être autonome en cherchant l'information par nous-même : je peux donc affirmer que Google est plus qu'un simple ami !</p>
+                                <p>Anciennement Designer Workspace, j'ai décidé de me reconvertir après sept années dans le domaine de l'architecture où j'ai notamment été formatrice AutoCAD, SketchUP et Photoshop. J'apprécie partager mes connaissances avec les autres et apprendre toujours de nouvelles choses !</p></blockquote> 
+                                <!-- Modal important  -->
+                                <button class="button type3 mt-5 mb-5 w-100 "data-toggle="modal" data-target="#exampleModal">IMPORTANT !</button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">RECHERCHE DE STAGE</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body text-center font-weight-bold">
+                                            <p>Je suis actuellement à la recherche d'un stage de 6 mois à partir de Juillet 2021.</p>
+                                            <p>Hésitez pas à me contacter.</p>
+                                            <p>Merci !</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="mailto:soulainah.peer@gmail.com" title="E-mail"><img src="logo/mail.png" alt="logo d'une enveloppe"></a>
+                                            <a href="Workspace/CV Soulainah  FITAS.pdf" title="CV_PDF" target="_blank"><img src="logo/pdf.png" alt="logo d'un PDF"></a></p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- Modal important  -->
+                        </div> <!-- fin div texte  -->
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center"> <!-- debut div photo  -->
+                            <img class="photoprofil" src="images/photo_4.png" alt="">
+                        </div> <!-- fin div photo  -->
+                    </div>
+                </div>              
+<!--==================================  Compétences ==================================-->
+                <div class="container" id="competences">
+                    <div class="row">
+                        <div class="container py-3"> <!-- Container qui englobe -->
+                            <h2 class="text-center m-5 display-4">Mes compétences</h2>
+                            <div class="icones text-center">
+                                <img src="https://img.icons8.com/color/96/000000/html-5.png"/>
+                                <img src="https://img.icons8.com/color/96/000000/css3.png"/>
+                                <img src="https://img.icons8.com/color/96/000000/javascript.png"/>
+                                <img src="https://img.icons8.com/color/96/000000/bootstrap.png"/>
+                                <img src="https://img.icons8.com/ios/100/000000/php-logo.png"/>
+                                <img src="https://img.icons8.com/color/96/000000/sql.png"/>
+                                <img src="https://img.icons8.com/ios-filled/100/000000/jquery.png"/>
+                                <img src="https://img.icons8.com/color/96/000000/react-native.png"/>
+                                <img src="https://img.icons8.com/color/96/000000/autodesk-autocad.png"/>
+                                <img src="https://img.icons8.com/color/96/000000/google-sketchup.png"/>
+                                <img src="https://img.icons8.com/color/96/000000/adobe-photoshop.png"/>
+                            </div>
+
+                        </div> <!-- fin Container qui englobe -->
+                    </div> <!-- row compétences-->
+                </div> <!-- fin container compétences-->
+<!--==================================  Expériences ==================================-->
+                <div class="container" id="experiences">
+                    <div class="row">
+                        <div class="container py-3"> <!-- Container qui englobe -->
+                            <h2 class="text-center m-5 display-4">Mon parcours professionnel</h2>          
+                            <div class="main-timeline">
+                                <div class="timeline" data-aos="fade-up-right">
+                                    <a href="https://www.descodeuses.org/" target="_blank" class="timeline-content">
+                                        <img class="logo d-none d-md-block" src="logo/logo-descodeuses.png" alt="logo centre de formation descodeuses">
+                                        <div class="inner-content">
+                                            <h3 class="title">Développeuse WEB</h3>
+                                            <p class="description">
+                                                <p class="font-weight-bold"><u>En cours de formation chez DESCODEUSES, compétences et qualités visées</u></p>
+                                                <li>HTML5 / CSS3 / JAVASCRIPT / BOOTSTRAP / JQUERY / REACT / SQL / PHP</li>
+                                                <li>Maquettage</li>
+                                                <li>Environnement GIT</li>
+                                            </p>
+                                        </div>
+                                        <div class="timeline-year"><span>2021</span></div>
+                                    </a>
+                                </div>
+                                <div class="timeline" data-aos="fade-up-left">
+                                    <a href="https://fr.tetris-db.com/" target="_blank" class="timeline-content">
+                                        <img class="logoG d-none d-md-block" src="logo/logo_tetris_parella.png" alt="logo entreprise tetris et parella">
+                                        <div class="inner-content">
+                                            <h3 class="title">Architecte Designer Workspace</h3>
+                                            <p class="description">
+                                                <li>Analyse de l’efficacité de l’immeuble / Analyse du cahier des charges</li>
+                                                <li>Étude de faisabilité / plans de phasages / Micro & Micro zoning</li>
+                                                <li>Aménagement des espaces de bureaux / Créations d’espaces collectifs</li>
+                                                <li>Recollement et mise à jour des plans suite au travaux et déménagements</li>
+                                            </p>
+                                        </div>
+                                        <div class="timeline-year"><span>2020-2017</span></div>
+                                    </a>
+                                </div>
+                                <div class="timeline" data-aos="fade-up-right">
+                                    <a href="https://www.spie.com/" target="_blank" class="timeline-content">
+                                        <img class="logo d-none d-md-block" src="logo/logo-spie.png" alt="logo entreprise spie">
+                                        <div class="inner-content">
+                                            <h3 class="title">Dessinatrice Réseaux Télécoms</h3>
+                                            <p class="description">
+                                                <li>Création des DOE : dossiers d’ouvrages d’exécutions</li>
+                                                <li>Rassemblement des fichiers administratifs et techniques</li>
+                                                <li>Reproduction des éléments FH et antennes RADIO sur pylônes</li>
+                                                <li>Mise à jour des plans existants</li>
+                                            </p>
+                                        </div>
+                                        <div class="timeline-year"><span>2016</span></div>
+                                    </a>
+                                </div>
+                                <div class="timeline" data-aos="fade-up-left">
+                                    <a href="https://www.arkance-systems.fr/" target="_blank" class="timeline-content">
+                                        <img class="logoG d-none d-md-block" src="logo/logo-aricad.png" alt="logo entreprise aricad">
+                                        <div class="inner-content">
+                                            <h3 class="title">Dessinatrice Réseaux Centrales Nucléaires</h3>
+                                            <p class="description">
+                                                <li>Responsable de la gestion et des relations clientèles</li>
+                                                <li>Reproduction des plans de structures des centrales nucléaires d’île de france</li>
+                                                <li>Représentation des éléments électriques et télécoms sur plan</li>
+                                                <li>Reproduction des schémas électriques sur le logiciel « Diagrams »</li>
+                                            </p>
+                                        </div>
+                                        <div class="timeline-year"><span>2016-2013</span></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> <!-- fin Container qui englobe -->
+                    </div> <!-- row experiences-->
+                </div> <!-- fin container experiences-->         
+<!--==================================  Projets ==================================-->    
+                <section id="projets">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h2 class="text-center m-5 display-4">Mes réalisations</h2> 
+                            </div>
+                            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <button class="filter-button" data-filter="all">Tout les projets</button>
+                                <button class="filter-button" data-filter="category1">Site WEB</button>
+                                <button class="filter-button" data-filter="category2">Design Workspace</button>
+                            </div>
+                            <br/>
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                                <a class="fancybox" rel="ligthbox" href="#" target="_blank">
+                                    <img class="img-responsive" alt="site fictif de judo" src="images/judofun.png" />
+                                    <div class='img-info '>
+                                        <h2>JudoFun</h2>
+                                        <p>Site internet pour l'apprentissage du Judo pour enfants</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                                <a class="fancybox" rel="ligthbox" href="#" target="_blank">
+                                    <img class="img-responsive" alt="site fictif de recette" src="images/Lescuisto.png" />
+                                    <div class='img-info '>
+                                        <h2>LesCuisto</h2>
+                                        <p>Blog internet de recette Mauricienne</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                                <a class="fancybox" rel="ligthbox" href="#" target="_blank">
+                                    <img class="img-responsive" alt="site fictif salamèche" src="images/salameche.png" />
+                                    <div class='img-info '>
+                                        <h2>Salamèche</h2>
+                                        <p>Blog perso Salamèche</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                                <a class="fancybox" rel="ligthbox" href="#" target="_blank">
+                                    <img class="img-responsive" alt="Cv numerique" src="images/moncv.png" />
+                                    <div class='img-info '>
+                                        <h2>Cv numérique</h2>
+                                        <p>Cv avec intéraction</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                                <a class="fancybox" rel="ligthbox" href="Workspace/Projet_eqiom.pdf" target="_blank">
+                                    <img class="img-responsive" alt="projet eqiom" src="images/eqiom.png" />
+                                    <div class='img-info '>
+                                        <h2>Eqiom</h2>
+                                        <p>Projet aménagement espace de travail</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                                <a class="fancybox" rel="ligthbox" href="Workspace/Projet_afp.pdf" target="_blank">
+                                    <img class="img-responsive" alt="projet afp" src="images/afp.png" />
+                                    <div class='img-info '>
+                                        <h2>AFP</h2>
+                                        <p>Projet aménagement espace de travail</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                                <a class="fancybox" rel="ligthbox" href="Workspace/Projet_appart.pdf" target="_blank">
+                                    <img class="img-responsive" alt="projet " src="images/appartement.png" />
+                                    <div class='img-info '>
+                                        <h2>Appartement</h2>
+                                        <p>Projet aménagement d'un appartement</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                                <a class="fancybox" rel="ligthbox" href="Workspace/Projet_geodis.pdf" target="_blank">
+                                    <img class="img-responsive" alt="projet " src="images/geodis.png" />
+                                    <div class='img-info '>
+                                        <h2>Geodis</h2>
+                                        <p>Projet aménagement espace de travail</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                                <a class="fancybox" rel="ligthbox" href="Workspace/Projet_edenred.pdf" target="_blank">
+                                    <img class="img-responsive" alt="projet " src="images/edenred.png" />
+                                    <div class='img-info '>
+                                        <h2>Edenred</h2>
+                                        <p>Projet aménagement espace de travail</p>
+                                    </div>
+                                </a>
+                            </div>
+                    </div>      
+                        </div>
+                    </div>
+                </section>
+                <a id="button"><img src="logo/fleche_haut.png" alt="fleche up"></a> <!-- bouton UP -->
+<!--==================================  FOOTER ==================================-->             
+                <footer class="container-fluid bg-dark text-center text-lg-start">
+                    <!-- Copyright -->
+                    <div class="text-center p-3">
+                        © 2021
+                        <a href="https://mdbootstrap.com/">SoulainahFitas</a>
+                    </div>
+                    <!-- Copyright -->
+                </footer>
+            </main> <!-- fin partie centrale -->
+        </div> <!-- fin du row -->
+    </div> <!-- fin du container-fluid -->
+<!--==================================  LIENS ==================================--> 
+<script src="jquery-3.5.1.min.js"></script> <!--toujours au dessus de JS-->
+<script src="bootstrap.min.js"></script>
+<script src="main.js"></script> <!--fichier JS-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!--AOS animation-->
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
