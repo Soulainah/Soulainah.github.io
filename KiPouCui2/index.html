@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- aos animation -->
+    <link href="images/logo_KI_POU_CUI.png" rel="icon"> <!-- Favicons -->
+    <link href="style.css" rel="stylesheet">
+    <title>Ki Pou Cui</title>
+</head>
+<body>
+<!--==================================  NAVBAR ==================================-->             
+<header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <!-- Logo Image -->
+                <img src="images/logo_KI_POU_CUI.png" width="180" alt="logo du site" class="d-inline-block align-middle mr-2">
+              </a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#propos" class="nav-link text-uppercase font-weight-bold">A PROPOS<span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a href="#gallerie" class="nav-link text-uppercase font-weight-bold">GALLERIES</a></li>
+                    <li class="dropdown"><a href="#recette" class="nav-link text-uppercase font-weight-bold">RECETTES</a>
+                        <ul>
+                            <li><a href="#carry">Carry Laviane</a></li>
+                            <li><a href="#napo">Napolitaine</a></li>
+                            <li><a href="#pita">Dhal Pita</a></li>
+                            <li><a href="#banane">Tarte Banane</a></li>
+                            <li><a href="#diriz">Diriz Frire</a></li>
+                            <li><a href="#patate">Gato Patate</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#contact" class="nav-link text-uppercase font-weight-bold">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--================================== A PROPOS ==================================-->  
+<div class="container page col-lg-10"> <!--container qui englobe la page-->
+    <div class="container" id="propos">
+        <div class="row">
+            <div class="col-lg-5 text-center">
+                <img src="images/KI_POU_CUI.png" width="250" alt="photo admin" class="img-fluid" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            </div>
+            <div class="col-lg-7" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <h1 class="mb-5">Hello, je m'appelle Soulainah,</h1>
+                <p> je vis en région parisienne et je suis d'origine mauricienne.Je suis passionnée de jeux vidéo et de cuisine, comme je le dis souvent "Manger c'est la vie !"</p>
+                <p>Que veut dire Ki Pou Cui ? Ca veut tout simplement dire "qu'est ce qu'on va cuisiner"</p>
+                <p>Maurice est un paradis pour le palais et les sens, où la diversité ethnique de la population locale se reflète dans sa cuisine. C’est un magnifique endroit pour faire l’expérience d’une vraie cuisine gastronomique.</p>
+                <p>La cuisine mauricienne est un mélange unique des traditions culinaires britanniques, indiennes, chinoises et créoles.Les Mauriciens ont adopté ces influences, avec leurs fruits, légumes, épices et autres ingrédients et toutes ces sources ont été mises à profit pour créer un style de cuisine fusionnelle.</p>
+                <p>Aujourd'hui je vais vous partager un de mes plats preferés sino-mauricien qui est le "dirz frire" je n'en dis pas plus la suite ce passe en dessous !</p>
+                <div class="fourneaux text-center mt-5">
+                    <h3>Bonne visite !<img src="images/dodo.gif" class="mb-5" width="100" alt="image animé d'un dodo"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--================================== GALLERIE ==================================-->
+    <h2 class="text-center m-5" id="gallerie">GALLERIE DES PHOTOS DE RECETTES</h2>
+    <div class="row text-center"> <!--row-->
+        <div class="col-lg-4 item">
+            <div class="box" style="background-image:url(images/carry_laviane.png)">
+                <div class="cover">
+                    <h3 class="name">CARRY LAVIANE</h3>
+                    <p class="title">Plat à base de sauce épicé au boeuf</p>
+                    <button type="button" class="btn btn-outline-dark" style="color: rgba(219, 159, 199); background-color: rgb(44, 10, 58);"><a href="#carry">Voir la recette</a></button>
+                </div>
+            </div>    
+       </div>
+       <div class="col-lg-4 item">
+            <div class="box" style="background-image:url(images/napolitain.png)">
+                <div class="cover">
+                    <h3 class="name">NAPOLITAINE</h3>
+                    <p class="title">Sablé fourré à la goyave</p>
+                    <button type="button" class="btn btn-outline-dark" style="color: rgba(219, 159, 199); background-color: rgb(44, 10, 58);"><a href="#napo">Voir la recette</a></button>
+                </div>
+            </div>    
+        </div>
+        <div class="col-lg-4 item">
+            <div class="box" style="background-image:url(images/dhal_pita.png)">
+                <div class="cover">
+                    <h3 class="name">DHAL PITA</h3>
+                    <p class="title">Plat à base de sauce de lentille et dhal et pâtes</p>
+                    <button type="button" class="btn btn-outline-dark" style="color: rgba(219, 159, 199); background-color: rgb(44, 10, 58);"><a href="#pita">Voir la recette</a></button>
+                </div>
+            </div>    
+        </div>
+        <div class="col-lg-4 item">
+            <div class="box" style="background-image:url(images/tarte_banane.png)">
+                <div class="cover">
+                    <h3 class="name">TARTE BANANE</h3>
+                    <p class="title">Tartelette à base de banane</p>
+                    <button type="button" class="btn btn-outline-dark" style="color: rgba(219, 159, 199); background-color: rgb(44, 10, 58);"><a href="#banane">Voir la recette</a></button>
+                </div>
+            </div>    
+        </div>
+        <div class="col-lg-4 item">
+            <div class="box" style="background-image:url(images/diriz_frire.png)">
+                <div class="cover">
+                    <h3 class="name">DIRIZ FRIRE</h3>
+                    <p class="title">Plat à base riz cantonais frit</p>
+                    <button type="button" class="btn btn-outline-dark" style="color: rgba(219, 159, 199); background-color: rgb(44, 10, 58);"><a href="#diriz">Voir la recette</a></button>
+                </div>
+            </div>    
+        </div>
+        <div class="col-lg-4 item">
+            <div class="box" style="background-image:url(images/gato_patate.png)">
+                <div class="cover">
+                    <h3 class="name">GATO PATATE</h3>
+                    <p class="title">chausson fourré à la patate douce et coco rapé</p>
+                    <button type="button" class="btn btn-outline-dark" style="color: rgba(219, 159, 199); background-color: rgb(44, 10, 58);"><a href="#patate">Voir la recette</a></button>
+                </div>
+            </div>    
+        </div>
+    </div> <!--fin row-->
+    <!-- Copyright -->
+    <div class="text-center font-italic font-weight-bold mb-5">
+        © 
+        <a href="https://www.latelierdekristel.com/" target="_blank" class="text-dark">Photos prises sur le site de Kristel</a>
+    </div>    
+<!--================================== RECETTES ==================================-->
+    <h2 class="text-center" id="recette">LES RECETTES</h2>
+<!--================================== CARRY ==================================-->
+    <div class="container-fluid pt-5 ligneborder" id="carry" data-aos="fade-down" data-aos-duration="3000">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="images/carry_laviane.png" class="img-fluid" alt="plat mauricien" width="800">
+            </div>
+            <div class="col-lg-6">
+                <h3 class="text-center mb-4">CARRY LAVIANE</h3>
+                <p>Quelque mot sur la cuisine Indo-Mauricienne</p>
+
+                <p>
+                    La Cuisine Indienne est très présente sur Maurice, logique puisque près de 70% de la population de l’île est originaire du sud de l’Inde, travailleurs émigrés venus pour travailler dans les champs de cannes suite à l’abolition de l’esclavage par l’Angleterre.
+                </p>
+                <p>
+                    Ces travailleurs ont apportés dans leurs bagages leurs currys, leurs différentes galettes : Roti, dhall-puri, puri (ti-puri) ainsi que certains de leurs desserts qui sont devenus des grands classiques de la Cuisine Mauricienne. Cet héritage a essaimé dans toute l’île et l’on y trouve de nombreux restaurants et snacks proposant des rotis accompagnés de curry.
+                </p>
+                <p>
+                    Le repas Indo-Mauricien classique est constitué d’un curry, qu’il soit végétarien comme le fricassé de giromon, brede songe ou rougaille, ou de crustacé comme le Curry de Crevettes ou à la viande comme le Curry d’Agneau, de riz blanc, d’un Roti, agrémenté d’un chutney, souvent de tomates, et d’une petite salade verte, de carottes ou de concombre ou pour apporté de la fraîcheur.
+                </p>
+                <p>
+                    Un autre classique de la Cuisine Indienne qui est devenu une spécialité de Maurice est le Briani, un plat de riz dans lequel le riz, les épices, les légumes et même les viandes sont cuit ensemble dans un deck, accessoire indispensable pour avoir un briani reussi.
+                </p>
+
+
+                <p>C'est parti pour le "CARRY LAVIANE" (curry au boeuf)</p>
+                <h3 class="text-center mt-5">A vos fourneaux !<img src="images/ustensile.png" class="img-fluid" alt="ustensile de cuisine"></h3>
+            </div>
+        </div>
+        <div class="row mt-4 lignetop">
+            <div class="col-lg-4 ">
+                <h3 class="text-center my-4">Liste des ingrédients pour 6 personnes</h3>
+                <div id="checklist">
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">1kg de boeuf</label>
+                    <input id="02" type="checkbox" name="r" value="2">
+                    <label for="02">3 pommes de terre moyenne coupées en quartier</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">1 bâton de cannelle</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">3 feuilles de curry</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">1 gros oignon haché</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">1 cuillère à soupe de pâte d’ail & gingembre</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">5 cuillères à soupe de Masala</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">1 petit botte de coriandre fraîche hachée</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">1 bouillon de poule dilué dans 1L d’eau</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">2 tomates mixées et réduites en purée</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">1 cuillère à café de Garam Masala</label>
+                </div>
+            </div>
+            <div class="col-lg-8 ligneleft">
+                <h3 class="text-center my-4">Commençons la recette</h3>
+                <p>1 – Dans une cocotte minute, faire revenir dans un peu d’huile, les oignons avec la pâte d’ail & gingembre ainsi que les feuilles de curry.</p>
+                <p>2 – Une fois que la viande est bien dorée,  le Masala, le Garam Masala, le bâton de cannelle et remuer le tout afin que le parfum des épices s’en dégage.</p>
+                <p>3 – Ajouter le coulis de tomates, le sucre, saler et poivrer. Continuer à remuer le tout à feu doux bien sûr.</p>
+                <p>4 – Arroser la viande du bouillon de poule, mettre la moitié de la coriandre fraîche. Fermer la cocotte minute et laisser cuire pendant 30minutes au moins . Veiller pendant les 10 premières minutes de mettre un feu très fort afin de mettre la cocotte sous pression puis le baisser.</p>
+                <p>5 – Une fois que les 30 minutes passées, enlever la vapeur de la cocotte, de préférence à l’éxterieur de votre maison afin que la vapeur ne se répande pas. Ajouter les pommes de terre, recouvrir d’eau et rectifier l’assaisonnement (sel). Laisser cuire à feu doux pendant 30 autres minutes au moins mais cette fois-ci pas sous pression. Finir les 10 dernières à feu fort afin de faire légèrement réduire la sauce.</p>
+                <p>6 – Une fois que le Carry est prêt, parsemer de coriandre fraîche. Servir avec du riz basmati nature.</p>
+            </div>
+        </div>
+    </div>
+<!--================================== NAPOLITAINE ==================================-->
+    <div class="container-fluid pt-5 ligneborder" id="napo" data-aos="fade-down" data-aos-duration="3000">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="text-center mb-4">NAPOLITAINE</h3>
+                
+                <p>C'est parti pour les "NAPOLITAINES" (sablé fourré à la confiture de goyave</p>
+                <h3 class="text-center mt-5">A vos fourneaux !<img src="images/ustensile.png" class="img-fluid" alt="ustensile de cuisine"></h3>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/napolitain.png" class="img-fluid" alt="gateau mauricien" width="800">
+            </div>
+        </div>
+        <div class="row mt-4 lignetop">
+            <div class="col-lg-4 ">
+                <h3 class="text-center my-4">Liste des ingrédients</h3>
+                <h4>Pour les biscuits</h4>
+                <div id="checklist">
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">250g de farine</label>
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">175g de beurre ramolli</label>
+                </div>
+                <h4>Pour le fourrage</h4>
+                <div id="checklist">
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">Confiture de goyave</label>
+                </div>
+                <h4>Pour le glaçage</h4>
+                <div id="checklist">
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">Sucre glace</label>
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">1 blanc d'oeuf</label>
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">un trait de jus de citron</label>
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">Colorant alimentaine en poudre</label>
+                </div>
+            </div>
+            <div class="col-lg-8 ligneleft">
+                <h3 class="text-center my-4">Commençons la recette</h3>
+                <h4>Pour les biscuits</h4>
+                <p>Préchauffer le four à 190°C.</p>
+                <p>1 – Dans un grand récipient, verser la farine et le beurre ramolli coupé en morceaux.</p>
+                <p>2 – Travailler longuement la pâte du bout des doigts. Cette étape est très importante car sans pétrissage la pâte risque de s’effriter.</p>
+                <p>3 – Une fois la pâte bien travaillée, former une boule.</p>
+                <p>4 – À l’aide du rouleau à pâtisserie, aplatir la pâte, épaisseur 3 mm ou plus.</p>
+                <p>5 – Découper ensuite plusieurs petits cercles à l’aide d’un emporte-pièce et placer les biscuits sur une plaque recouverte de papier sulfurisé.</p>
+                <p>6 – Faire cuire à 180°C (thermostat 6) pendant 20-30min. Surveiller la cuisson, les biscuits napolitaines doivent être plus ou moins blancs et ne pas être dorés.</p>
+                <p>7 – Avant de les déplacer, les laisser refroidir.</p>
+                <h4>Pour le glaçage</h4>
+                <p>1 – En attendant que les biscuits refroidissent, préparer le glaçage. Dans un cul de poule, battre un blanc d’œuf, ajouter du sucre glace jusqu’à ce que le mélange devienne bien épais. </p>
+                <p>Ajouter également un trait de jus de citron ainsi qu’une pointe de colorant rouge histoire de teinter le glaçage.</p>
+                <h4>Le montage</h4>
+                <p>1 -Mettre un peu de confiture sur un biscuit et le refermer avec un biscuit vierge, faire des petits sandwich avec la confiture de goyave.</p>
+                <p>2 – Sur une grill, une fois tous vos biscuits assemblés, les disposer et mettre le glaçage à l’aide d’une petite cuillère. Se référer à la photo des Napolitaines. Une fois fini, les mettre au frigo pendant une petite heure jusqu’à ce que le glaçage durcisse et après vous pourrez les déguster !</p>
+            </div>
+        </div>
+    </div>
+<!--================================== DHAL PITA ==================================-->
+    <div class="container-fluid pt-5 ligneborder" id="pita" data-aos="fade-down" data-aos-duration="3000">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="images/dhal_pita.png" class="img-fluid" alt="plat mauricien" width="800">
+            </div>
+            <div class="col-lg-6">
+                <h3 class="text-center mb-4">DHAL PITA</h3>
+                <p>Quelque mot sur la cuisine Créole-Mauricienne</p>
+                <p>
+                    Métissage des cuisines africaine et européene, influencée par l’Asie et la Réunion voisine, la Cuisine Créole est un melting pot formidable et coloré.
+                </p>
+                <p>
+                    Une de ses spécialités les plus appréciée est le Civet de Cerf, car il y’a des cerfs a Maurice, apportés par les Hollandais il y’a bien longtemps. C’est un plat assez proche de la chasse qu’on mange en europe, mais avec du piment, la petite touche locale.
+                </p>
+                <p>
+                    Un autre grand classique de la Cuisine Créole : le Rougail, une sorte de ragout à la sauce tomate qui, comme le curry, se prépare avec une infinité d’ingrédients, les plus connus étant certainement le Rougail Saucisse et le Rougail Crevettes mais on fait aussi du Rougail aux œufs ou a la viande.
+                </p>
+                <p>C'est parti pour le "DHAL PITA" (Sauce de lentille et de dhal et pâte)</p>
+                <h3 class="text-center mt-5">A vos fourneaux !<img src="images/ustensile.png" class="img-fluid" alt="ustensile de cuisine"></h3>
+            </div>
+        </div>
+        <div class="row mt-4 lignetop">
+            <div class="col-lg-4 ">
+                <h3 class="text-center my-4">Liste des ingrédients pour 6 personnes</h3>
+                <h4>Pour la sauce</h4>
+                <div id="checklist">
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">1 oignon rouge émincé</label>
+                    <input id="02" type="checkbox" name="r" value="2">
+                    <label for="02">150g de dhal</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">150g de lentilles noires/vertes</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">10 feuilles de curry</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">1 grosse tomate coupée en morceaux ou 60g de purée de tomat</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">1 cuillère à soupe de curcuma</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">2 cuillères à soupe de masala</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">1 cuillère à soupe de graines de cumin</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">1 cuillère à soupe bombée de pâte d’ail et gingembre</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">500ml d’eau</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">1 branche de thym</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">Quelques branches de coriandre</label>
+                </div>
+                <h4>Pour les pâtes</h4>
+                <div id="checklist">
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">300g farine</label>
+                    <input id="02" type="checkbox" name="r" value="2">
+                    <label for="02">200ml d’eau</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">1 cuillère à café de sel</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">2 cuillère à soupe d’huile</label>
+                </div>
+            </div>
+            <div class="col-lg-8 ligneleft">
+                <h3 class="text-center my-4">Commençons la recette</h3>
+                <h4>Pour les pâtes</h4>
+                <p>1 – Dans un saladier, ajouter la farine, le sel, l’huile et l’eau. Bien pétrir le mélange jusqu’à l’obtention d’une boule.</p>
+                <p>2 – Laisser reposer la pâte le temps de préparer la sauce.</p>
+                <p>3 – Une fois la pâte reposée, fariner généreusement le plan de travail et étaler la pâte à l’aide d’un rouleau à pâtisserie, tout en farinant. La pâte ne doit pas coller.</p>
+                <p>4 – À l’aide d’une roulette, réaliser des petits carrés de pâtes. Fariner chaque morceau afin qu’ils ne se collent pas entre eux.</p>
+                <h4>Pour la sauce</h4>
+                <p>1 – Dans une casserole, faire revenir l’oignon et les feuilles de curry dans un peu d’huile. Ajouter le masala, le curcuma, les graines de cumin, le thym, la pâte d’ail et gingembre et la purée de tomate.</p>
+                <p>2 – Ajouter le dhal et les lentilles. Recouvrir d’eau. Attendre un peu que ça mijote.</p>
+                <p>3 – Ajouter les pâtes précédemment préparées. Laisser cuire pendant environ 5 minutes.</p>
+            </div>
+        </div>
+    </div>
+<!--================================== TARTE BANANE ==================================-->
+    <div class="container-fluid pt-5 ligneborder" id="banane" data-aos="fade-down" data-aos-duration="3000">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="text-center mb-4">TARTE BANANE</h3>
+                
+                <p>C'est parti pour les "TARTES BANANES" (Tartelette à la banane)</p>
+                <h3 class="text-center mt-5">A vos fourneaux !<img src="images/ustensile.png" class="img-fluid" alt="ustensile de cuisine"></h3>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/tarte_banane.png" class="img-fluid" alt="gateau mauricien" width="800">
+            </div>
+        </div>
+        <div class="row mt-4 lignetop">
+            <div class="col-lg-4 ">
+                <h3 class="text-center my-4">Liste des ingrédients</h3>
+                <h4>Pour la garniture</h4>
+                <div id="checklist">
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">4 à 5 bananes bien mûres</label>
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">10g de chocolat ou cacao en poudre</label>
+                </div>
+                <h4>Pour la pâte de la tarte</h4>
+                <div id="checklist">
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">350g de farine T45</label>
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">50g de sucre glace</label>
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">200g de beurre doux mou</label>
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">Crème fraîche</label>
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">Noix de coco en poudre</label>
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">Œuf battu</label>
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">Sucre roux</label>
+                </div>
+            </div>
+            <div class="col-lg-8 ligneleft">
+                <h3 class="text-center my-4">Commençons la recette</h3>
+                <h4>Pour la garniture de la tarte</h4>
+                <p>Préchauffer le four à 180°C.</p>
+                <p>1 – Écraser les bananes à l’aide d’une fourchette, en intégrant le Muscovado, le chocolat en poudre et faire cuire le tout dans une petite casserole. Une fois cuite (la banane va bouillir), l’enlever du feu et laisser refroidir à l’air libre.</p>
+                <h4>Pour le fond de tarte</h4>
+                <p>1 – Dans un saladier, mélanger la farine et le sucre glace. Couper le beurre en dés et le mettre dans farine en le travaillant du bout des doigts. Il faut obtenir un effet sableux.</p>
+                <p>2 – Ajouter la crème fraîche pour que tous les petits morceaux du mélange farine/sucre glace/beurre se collent entre eux et forment une unique boule de pâte. Envelopper la pâte dans du cellophane et la laisser 20 minutes au frigo.</p>
+                <p>3 – Prendre un moule à tarte, le beurrer et le fariner. Sur un plan de travail, saupoudrer de la farine, sortir la pâte à tarte et l’étaler. L’enrouler à l’aide du rouleau puis la déposer sur le plat à tarte.</p>
+                <p>4 – Une fois la pâte mise sur le plat à tarte et une fois la bordure (excédent de pâte) coupée, piquer le fond avec une fourchette puis l’enfourner pendant 10 à 15 min à blanc sans garniture.</p>
+                <p>5 – Pendant ce temps, avec le reste de pâte, faire des bandes de pâte (environ 13 à 14). Attention à bien fariner votre plan de travail pour que celles-ci ne collent pas.</p>
+                <p>6 – Une fois le fond de tarte cuit, l’enlever du four et étaler la garniture de bananes et saupoudrer de noix de coco ainsi que de sucre roux.. Disposer ainsi les bandes comme sur la photo ci-dessus. À l’aide de pinceau de cuisine, passer l’œuf battu par dessus (pour la dorure).</p>
+                <p>7 – Enfourner pour environ 30 à 40  minutes à 180°C selon votre four, il faut que la Tarte soit bien dorée. Il faut la surveiller.</p>
+                <p>8 – La sortir du four après la cuisson, la laisser refroidir et la déguster car elle ne se mange pas chaude ni tiède mais à température ambiante. Attention à ne pas la mettre au frigo car elle perd en saveur.</p>
+            </div>
+        </div>
+    </div>
+<!--================================== DIRIZ FRIRE ==================================-->
+    <div class="container-fluid pt-5 ligneborder" id="diriz" data-aos="fade-down" data-aos-duration="3000">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="images/diriz_frire.png" class="img-fluid" alt="plat mauricien" width="800">
+            </div>
+            <div class="col-lg-6">
+                <h3 class="text-center mb-4">DIRIZ FRIRE</h3>
+                <p>Quelque mot sur la cuisine Sino-Mauricienne</p>
+                <p>
+                    Bien que ne représentant que 5% de la population de l’ile, les Sino-mauriciens ont une grande influence sur la cuisine mauricienne puisque certaines de ses spécialités les plus renommées sont issue de la Cuisine Chinoises : Boulettes, Bols Renversés et Mines Frites, par exemple.
+                </p>
+                <p>
+                    La cuisine Sino-Mauricienne est la seule à proposer des recettes de pâtes, des nouilles aux œufs, qu’ils appèlent Mines avec deux grandes recettes : les Mines Bouillies et les Mines Frites.
+                </p>
+                <p>C'est parti pour le "DIRIZ FRIRE" (Riz cantonnais frit)</p>
+                <h3 class="text-center mt-5">A vos fourneaux !<img src="images/ustensile.png" class="img-fluid" alt="ustensile de cuisine"></h3>
+            </div>
+        </div>
+        <div class="row mt-4 lignetop">
+            <div class="col-lg-4 ">
+                <h3 class="text-center my-4">Liste des ingrédients pour 10 personnes</h3>
+                <h4>Pour le riz frit</h4>
+                <div id="checklist">
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">1kg de riz cuit</label>
+                    <input id="02" type="checkbox" name="r" value="2">
+                    <label for="02">350g de carottes taillées en julienne</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">400g de chou blanc râpé</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">450g de crevettes crues décortiquées</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">650g de poulet coupé en petits morceaux</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">Pâte de crevette (Shrimp paste) ou ( sinon la sauce Nuoc-Mâm suffira)</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">Sauce soja (idéalement foncé et si aux champignons, ne pas en abuser car votre riz deviendra noir, quelques gouttes suffisent)</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">1 petite botte de ciboule</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">8 œufs</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">1 gousse d’ail écrasée</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">Sel & poivre</label>
+                </div>
+                <h4>Pour la sauce à l'ail</h4>
+                <div id="checklist">
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">150ml de vinaigre blanc</label>
+                    <input id="02" type="checkbox" name="r" value="2">
+                    <label for="02">1 cuillère à soupe de sucre</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">1 cuillère à café de sel</label>
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">3 gousses d’ail dégermées et hachées</label>
+                </div>
+            </div>
+            <div class="col-lg-8 ligneleft">
+                <h3 class="text-center my-4">Commençons la recette</h3>
+                <p>Avant de commencer la recette suivante, il faut tout préparer dans des récipients différents afin d’être organisé et de ne pas se louper en oubliant quelque chose.</p>
+                <p>1 – Assaisonner le chou et les carottes (sel, poivre).</p>
+                <p>2 – Mélanger le poulet avec un filet de sauce soja, sauce nuoc mam, huile, ail écrasé, sel, et poivre. Faire la même chose pour les crevettes.</p>
+                <p>3 – Une cuillère à café de pâte à crevette ou Nuoc-mam à chaque fois qu'on fera revenir nos ingrédients</p>
+                <p>4 – Pour les oeufs, il faudra la travailler comme des oeufs brouillés pour avoir un beau résultat, assaisonner avec du sel et du poivre, remettre un peu d’huile, rajouter les autres ingrédients cuits.</p>
+                <p>5 – 4- Faire revenir chaque ingrédient un à un dans l’huile, d’abord le poulet, le réserver ensuite dans un bol et en faire de même pour chaque ingrédient chacun à leur tour, les crevettes, les carottes et le chou. Arroser de sauce soja et de nuoc mam, goûter avant de saler et poivrer. Parsemer en fin de cuisson la cive ou la ciboulette ciselée. Servir avec la sauce à l’ail.</p>
+                <p>Pour la sauce à l'ail : Mélanger tous les ingrédients et laisser reposer toute une nuit avant utilisation.</p>
+            </div>
+        </div>
+    </div>
+<!--================================== GATEAU PATATE ==================================-->
+    <div class="container-fluid pt-5 ligneborder" id="patate" data-aos="fade-down" data-aos-duration="3000">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="text-center mb-4">GATEAU PATATE</h3>
+             
+                <p>C'est parti pour les "GATEAUX PATATES" (chausson fourré à la patate douce et coco rapé)</p>
+                <h3 class="text-center mt-5">A vos fourneaux !<img src="images/ustensile.png" class="img-fluid" alt="ustensile de cuisine"></h3>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/gato_patate.png" class="img-fluid" alt="gateau mauricien" width="800">
+            </div>
+        </div>
+        <div class="row mt-4 lignetop">
+            <div class="col-lg-4 ">
+                <h3 class="text-center my-4">Liste des ingrédients</h3>
+                <div id="checklist">
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">260g de patate douce blanche (cette variété est plus sucré et généralement utilisée pour les desserts)</label>
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">260g de farine de blé</label>
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">70g de noix de coco râpée</label>
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">100g de sucre blanc</label>
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">2 cuillères et demi à soupe d’eau</label>
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">1 cuillère à café et demi de cardamome moulue</label>
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">Huile de friture</label>
+                </div>
+            </div>
+            <div class="col-lg-8 ligneleft">
+                <h3 class="text-center my-4">Commençons la recette</h3>
+                <p>1 – Éplucher la patate douce, la rincer, la couper en morceaux et la faire cuire dans de l’eau déjà bouillante dans une casserole comme pour faire une purée. Couvrir et laisser cuire au moins 20 min à feu moyen.</p>
+                <p>2 – Vérifier si la patate est cuite en utilisant la point d’un couteau pour voir si elle pénètre bien la chair sans difficulté. Si elle n’est toujours pas cuite, la laisser cuire encore comme pour une pomme de terre.</p>
+                <p>3 – Une fois cuite, égoutter le tout et à l’aide d’une fourchette réduire en purée la patate douce. Réserver et laisser refroidir.</p>
+                <p>4 – Dans un petite bol, mélanger la noix de coco, le sucre, la cardamome et l’eau pour faire la farce.</p>
+                <p>5 – Une fois la purée de patate douce froide, la mettre dans un cul de poule et tamiser la farine par dessus en malaxant bien le tout avec les mains. Il faudra obtenir une boule de pâte, si vous trouvez que la pâte est trop collante, ne pas hésiter pas rajouter un peu de farine. Quoiqu’il en soit, il ne faut pas qu’il y ait trop de farine mais que la pâte soit malléable.</p>
+                <p>6 – Nettoyer et fariner le plan de travail sur lequel on va étaler la pâte à l’aide d’un rouleau à pâtisserie. Il faut qu’elle soit fine mais pas, comme l’épaisseur d’un rouleau de pâte à tarte que l’on achète dans le commerce. À l’aide d’un bol style “petit-déjeuner”, découper des ronds de pâte et réserver sur une plaque farinée.</p>
+                <p>7 – Une fois les ronds découpés, dispatcher la farce de noix de coco au milieu de chacun des ronds. Dans un petit bol, mettre un peu d’eau. Tremper son doigt (souvent le majeur) dedans et badigeonner les contours de chaque rond d’un peu de cette eau.</p>
+                <p>8 – Fermer les chaussons, il faut que cela fasse des demi-cercles comme sur les photos et fermer à l’aide d’une fourchette en appuyant bien. Faire ceci en retournant les chaussons et en les faisant des deux côtés.</p>
+                <p>9 – Une fois tous les chaussons faits, dans une poêle assez profondes, mettre un fond d’huile et faire chauffer. Il faudra que les chaussons puissent baignent dedans. Faire frire à feu moyen jusqu’à ce que ces derniers soit bien dorés/marrons clairs.</p>
+                <p>10 – Servir tièdes ou froids comme vous le souhaitez, avec une tasse de thé à la vanille Bois Chéri au lait, c’est parfait ! Bonne dégustation !</p>
+            </div>
+        </div>
+    </div>
+<!--fin des recettes-->
+</div> <!--fin container qui englobe la page-->
+    <a id="button"><img src="images/KI_POU_CUI.png" width="100" alt="photo admin du site"></a> <!-- bouton UP -->
+<!--==================================  FOOTER ==================================--> 
+    <div class="container-fluid text-center p-4" style="background-color: rgb(247, 232, 234);" id="contact">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="images/logo_KI_POU_CUI.png" width="200" alt="logo du site">
+            </div>
+            <div class="col-lg-6">
+                <h3 style="color: rgb(44, 10, 58);">Merci de votre visite</h3>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-facebook mr-4" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-twitter mr-4" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-instagram mr-4" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+<!--==================================  LIENS ==================================--> 
+<script src="jquery-3.5.1.min.js"></script> <!--toujours au dessus de JS-->
+<script src="bootstrap.min.js"></script>
+<script src="main.js"></script> <!--fichier JS-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!--AOS animation-->
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
