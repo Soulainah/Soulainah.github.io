@@ -1,0 +1,56 @@
+/*Font-family*/
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans&display=swap');
+/* font-family: 'Luckiest Guy', cursive; */
+/* Variables */
+:root{
+    --textShadow: 5px 7px 6px blue; /*Ombres textes*/
+}
+body {
+    background-image: url(images/background.jpg);
+}
+h1, p {
+    font-family: 'Luckiest Guy', cursive; 
+    font-size: 50px;
+    color: rgb(243, 243, 11);
+    text-shadow: var(--textShadow); /*Pour utiliser nos variable*/
+}
+h1 {
+    text-align: center;
+    font-size: 80px;
+}
+#rejouer {
+    background-color: transparent;
+    border: transparent;
+    font-family: 'Luckiest Guy', cursive; 
+    font-size: 50px;
+    color: rgb(243, 243, 11);
+    text-shadow: var(--textShadow); /*Pour utiliser nos variable*/ 
+}
+.youloose{
+    background-image: url("images/looser.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.youwin {
+    background-image: url("images/winner.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container {
+    background-color: rgb(135, 135, 146);
+    height: 949px;
+}
+.container_header {
+    display: flex;
+    justify-content: space-around;
+   
+}
+.container_images {
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+}
+.container_bouton {
+    margin-left: 10%;
+}
