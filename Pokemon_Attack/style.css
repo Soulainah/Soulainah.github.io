@@ -72,7 +72,7 @@ h1 {
         height: 1024px;
     }
 }
-@media screen and (max-width : 600px){ /*version portable*/
+@media screen and (max-width : 500px){ /*version portable*/
     h1, p {
         font-size: 25px;
     }
