@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="pagesJeux.css">
+    <link rel="stylesheet" href="navigation-footer.css">
+    <title>Link'Art Game - Jeu sur PC</title>
+</head>
+
+<body>
+
+    <!--NAV BAR-->
+
+    <div class="navContainer">
+        <div class="logoBox">
+            <img src="Images/logo.png" alt="logo console de jeu">
+        </div>
+        <nav class="mainNavBar ">
+            <div class="hamburger-menu d-lg-none">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ps4.html" class="nav-link">PS4</a>
+                </li>
+                <li class="nav-item">
+                    <a href="xbox.html" class="nav-link">XBOX</a>
+                </li>
+                <li class="nav-item">
+                    <a href="switch.html" class="nav-link">Switch</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pc.html" class="nav-link">PC</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--FIN NAV BAR-->
+
+    <!--L'ESPACE RECHERCHE INPUT + LE PANIER-->
+    <div class="searchAndShop">
+        <div class="search-container">
+
+            <input id="searchBar" type="text" placeholder="Search.." name="search">
+            <a href="#" id="refrech"
+                style="color:#eeb1d0;font-weight:bold;text-decoration: none; font-family: tahoma;">X</a>
+            <button id="buttonSearch"><i class="fa fa-search"></i></button>
+        </div>
+
+
+        <div id="panier">
+            <img id="panierClick" src="Images/Bourse.png" alt="">
+            <div class="infoPanier d-flex flex-column">
+                <p class="p-0 m-0">Votre panier :</p>
+                <p class="p-0 m-0"><span id="itemNumber"></span> article(s)</p>
+            </div>
+        </div>
+    </div>
+    <div id="show"></div>
+
+
+
+        <!-- ESPACE OU ENVOYER LES TRUCSSSSSSS-->
+<div id="boxatruc">
+        <div id="cart" class="row text-center">
+            <!-- <div class ="border border-primary" id="imgcart"></div> -->
+            
+            <ul class="itemListCart ">
+
+                <!-- <div class="itemHouse">
+                    
+                </div> -->
+
+            </ul>
+            <!-- <a id="pay">Payer <span class="total">0.00</span>$</a> -->
+        </div>
+    </div>
+        <!--FIN ESPACE DES TRUCSSSSSSS-->
+    </div>
+
+    <!--FIN DU PANIER-->
+
+    <!--FIN DE L'ESPACE RECHERCHE INPUT + LE PANIER-->
+
+    <!--TA PAGE HTML ICIIIIIIIIIIIIIIII-->
+
+    <!-- page des 6 jeux catégorie PC -->
+    <div class="gamePresentation mt-2 mb-5 mainPage">
+        <h2 class="text-center titrePages">Nos Jeux <span>PC</span></h2>
+        <div class="container">
+            <div class="row mt-4">
+                <img id="castleImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+                    src="Images/PC/Castle_Vania.jpg" alt="image Castel Vania">
+                <img id="darkImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+                    src="Images/PC/Dark_Souls.jpg" alt="image Darks Souls">
+                <img id="fableImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+                    src="Images/PC/Fable3.jpg" alt="image Fable3">
+                <img id="halfImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+                    src="Images/PC/Half_Life.jpg" alt="image Half life">
+                <img id="simsImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+                    src="Images/PC/Les_simsPC.jpg" alt="image Les sims">
+                <img id="sherlockImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+                    src="Images/PC/Sherlock_Holmes.jpg" alt="image Shelock Holmes">
+            </div>
+        </div>
+    </div>
+    <!-- Page Castlevania -->
+    <article id="pcCastle" data-name="Castlevania" class="gamePage container text-center" data-price="29" >
+        <!--data-price-->
+        <div class="row d-flex flex-row p-5">
+            <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                src="Images/FLECHG.png" alt="image de flèche">
+            <div class="col-12 col-md-5 order-md-2 cart-content">
+                <h2 class="mt-3"><span class="shop-item-title">Castlevania</span></h2>
+                <!--TITRE JEU-->
+                <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/PC/Castle_Vania.jpg"
+                    alt="image Castlevania">
+                <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png" alt="image de flèche">
+            </div>
+            <div class="left col-12 col-md-6 order-md-1">
+                <h2 class="mt-3">Details du jeu</h2>
+                <p>
+                    Castlevania : Lords of Shadow - Ultimate Edition est un jeu d'action-aventure à la troisième
+                    personne sur PC et offre au joueur la possibilité d'incarner le mystérieux Gabriel.
+                </p>
+                <p>
+                    Exploration, combat et puzzles prennent une place importante dans sa quête principale. De sombres
+                    artefacts peuvent être collectés pour développer les pouvoirs de notre héros.
+                </p>
+                <h2 class="shop-item-price">29,99</h2>
+                <div class="toCart">
+                    <button class="shop-item-button m-4">Ajouter au Panier</button>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Page Dark Souls -->
+    <div id="pcDark" class="gamePage container text-center">
+        <div class="row d-flex flex-row p-5">
+            <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                src="Images/FLECHG.png" alt="image de flèche">
+            <div class="col-12 col-md-5 order-md-2">
+                <h2 class="mt-3"><span class="shop-item-title">Dark Souls II</span></h2>
+                <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/PC/Dark_Souls.jpg"
+                    alt="image Dark Souls">
+                <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png" alt="image de flèche">
+            </div>
+            <div class="left col-12 col-md-6 order-md-1">
+                <h2 class="mt-3">Details du jeu</h2>
+                <p>
+                    Jeu d'action-aventure, Dark Souls II sur PC prend place dans le monde de Drangleic d'inspiration
+                    dark fantasy. L'univers sombre et torturé de la série sert à merveille un gameplay éprouvant et
+                    punitif.</p>
+                <p>
+                    Pièges mortels, boss gigantesques et monstres agressifs seront le pain quotidien du joueur qui
+                    pourra les affronter seul ou en multijoueurs.</p>
+                <h2 class="shop-item-price">24,99</h2>
+                <button class="shop-item-button m-4">Ajouter au Panier</button>
+                 
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Fable 3 -->
+    <div id="pcFable" class="gamePage container text-center">
+        <div class="row d-flex flex-row p-5">
+            <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                src="Images/FLECHG.png" alt="image de flèche">
+            <div class="col-12 col-md-5 order-md-2">
+                <h2 class="mt-3"><span class="shop-item-title">Fable III</span></h2>
+                <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/PC/Fable3.jpg"
+                    alt="image du jeu Fable 3">
+                <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png" alt="image de flèche">
+            </div>
+            <div class="left col-12 col-md-6 order-md-1">
+                <h2 class="mt-3">Details du jeu</h2>
+                <p>
+                    Fable III est un jeu de rôle orienté action sur PC. Cinquante ans se sont écoulés depuis le deuxième
+                    opus. Le monde d'Albion est devenu industrialisé et est maintenant régi par un impitoyable tyran.
+                </p>
+                <p>
+                    Le joueur choisit son héros au début de l'aventure et doit faire en sorte de mener la révolution
+                    pour le renverser. Il doit ensuite prendre les rênes du pouvoir et parvenir à affronter les
+                    terribles périls qui menacent le pays. </p>
+                <h2 class="shop-item-price">19,99</h2>
+                <button class="shop-item-button m-4">Ajouter au Panier</button>
+                 
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Half-Life 2 -->
+    <div id="pcHalf" class="gamePage container text-center">
+        <div class="row d-flex flex-row p-5">
+            <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                src="Images/FLECHG.png" alt="image de flèche">
+            <div class="col-12 col-md-5 order-md-2">
+                <h2 class="mt-3"><span class="shop-item-title">Half-Life 2</span></h2>
+                <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/PC/Half_Life.jpg"
+                    alt="image du jeu Half-life 2">
+                <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png" alt="image de flèche">
+            </div>
+            <div class="left col-12 col-md-6 order-md-1">
+                <h2 class="mt-3">Details du jeu</h2>
+                <p>
+                    Half-Life 2 sur PC est un jeu d'action à la première personne dans lequel vous incarnez le
+                    professeur Gordon Freeman, fraîchement arrivé dans une ville aux mains d'une mystérieuse
+                    organisation appelée Le Cartel.
+                </p>
+                <p>
+                    Le joueur va devoir s'échapper de la ville et traquer le chef de la propagande en se servant d'une
+                    multitude d'armes, de véhicules mais surtout du Gravity Gun émettant un rayon d'attraction/répulsion
+                    permettant de faire voler à-peu-près tous les éléments du décor.
+                </p>
+                <h2 class="shop-item-price">34,99</h2>
+                <button class="shop-item-button m-4">Ajouter au Panier</button>
+                 
+            </div>
+        </div>
+    </div>
+    <!-- Page Sherlock Holmes -->
+
+    <body>
+        <div id="pcSherlock" class="gamePage container text-center">
+            <div class="row d-flex flex-row p-5">
+                <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                    src="Images/FLECHG.png" alt="image de flèche">
+                <div class="col-12 col-md-5 order-md-2">
+                    <h2 class="mt-3"><span class="shop-item-title">Sherlock Holmes</span></h2>
+                    <p>The devil's daughter</p>
+                    <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/PC/Sherlock_Holmes.jpg"
+                        alt="image du jeu Sherlock Holmes">
+                    <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png"
+                        alt="image de flèche">
+                </div>
+                <div class="left col-12 col-md-6 order-md-1">
+                    <h2 class="mt-3">Details du jeu</h2>
+                    <p>
+                        Sherlock Holmes: The Devil’s Daughter est un jeu d’aventure fantastique proposant un gameplay
+                        unique mêlant investigation, action et exploration, pour une expérience exceptionnelle qui
+                        mettra votre intelligence et vos nerfs à rude épreuve.
+                        Dans la peau du plus grand des détectives, traquez le mal jusque dans les bas-fonds de Londres
+                        et de l’âme humaine et démêlez les fils de multiples intrigues jusqu’à l’incroyable révélation
+                        finale.
+                    </p>
+                    <p>
+                        Chacune de vos déductions et de vos actions oriente la suite de l’histoire, pour le meilleur, ou
+                        pour le pire…
+
+                    </p>
+                    <h2 class="shop-item-price">24,99</h2>
+                    <button class="shop-item-button m-4">Ajouter au Panier</button>
+                     
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Les Sims 4 -->
+        <div id="pcSims" class="gamePage container text-center">
+            <div class="row d-flex flex-row p-5">
+                <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                    src="Images/FLECHG.png" alt="image de flèche">
+                <div class="col-12 col-md-5 order-md-2">
+                    <h2 class="mt-3"><span class="shop-item-title">Les Sims 4</span></h2>
+                    <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/PC/Les_simsPC.jpg"
+                        alt="image du jeu Les Sims 4">
+                    <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png"
+                        alt="image de flèche">
+                </div>
+                <div class="left col-12 col-md-6 order-md-1">
+                    <h2 class="mt-3">Details du jeu</h2>
+                    <p>
+                        Libérez votre imagination et créez un monde de Sims unique qui vous ressemble ! Explorez et
+                        personnalisez les moindres détails de vos Sims et de vos maisons, et bien plus encore.
+                        Choisissez l'apparence, le comportement et le look de vos Sims, puis décidez de la manière dont
+                        ils vivront au quotidien. Concevez et construisez des maisons incroyables pour chaque famille,
+                        puis décorez-les avec vos meubles et objets préférés.
+                    </p>
+                    <p>
+                        Gérez les hauts et les bas du quotidien de vos Sims, et découvrez ce qui se passe lorsque vous
+                        recréez des scénarios de votre propre vie réelle ! Racontez vos histoires à votre manière en
+                        développant des relations, en menant des carrières et en réalisant des aspirations à long terme,
+                        et plongez dans ce jeu extraordinaire où les possibilités sont illimitées. Jouez avec la vie !
+                    </p>
+                    <h2 class="shop-item-price">39,99</h2>
+                    <button class="shop-item-button m-4">Ajouter au Panier</button>
+                     
+                </div>
+            </div>
+        </div>
+
+        <!--ESPACE PANIER-->
+        <section class="container content-section">
+            <h2 class="section-header">PANIER</h2>
+            <div class="cart-row">
+                <!-- <span class="cart-item cart-header cart-column"></span>
+                <span class="cart-price cart-header cart-column"></span>
+                <span class="cart-quantity cart-header cart-column"></span> -->
+            </div>
+            <!-- la div "cart-itemS" est la div panier dans laquelle on enverra nos articles -->
+            <div class="cart-items border border-info">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">VALIDER LE PANIER</button>
+        </section>
+
+        <!--ESPACE PANIER-->
+
+
+        <!--FIN DE TA PAGE HTML-->
+
+
+        <p id="slogan"><span>GAMES</span> ARE <span>ART</span> ! LET'S BRING SOME ART IN OUR <span>LIFE</span> !</p>
+        <!--LE FOOTER-->
+        <footer>
+            <div id="footerLogo"><img src="Images/logo.png" alt="logo console de jeu"></div>
+            <div id="footerSocial">
+                <a href="#" role="button"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" role="button"><i class="fab fa-instagram"></i></a>
+                <a href="#" role="button"><i class="fab fa-twitter"></i></a>
+
+            </div>
+            <div id="copyright">
+                <p>&copy;&nbsp;&nbsp;2021&nbsp;Link'Art Game&nbsp;</p>
+                <p>Construit par la <span>team Descodeuses</span></p>
+                <p>Nella, Faiza, Soulainah et Adèle</p>
+            </div>
+        </footer>
+
+
+        <script src="Assets/dist/jquery.js"></script>
+        <script src="pagesJeux.js"></script>
+        <script src="panier2.js"></script>
+        <script src="searchBar.js"></script>
+        <script src="navigation.js"></script>
+
+    </body>
+
+</html>

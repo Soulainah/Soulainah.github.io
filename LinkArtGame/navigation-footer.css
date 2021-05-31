@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ededed;
+    /* display: flex;
+    flex-direction: column; */
+    /* border: pink solid 1px; */
+    height: 1000px;
+    position: relative;
+}
+
+/* CSS NAVBAR */
+
+.navContainer{
+    width: 100%;
+    height: 95px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    /* border: red 1px solid; */
+    background-color: rgba(0, 0, 0, 0.849);
+    border-radius:  0 0 60% 10%;
+    z-index: 3;
+}
+.mainNavBar{
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.835);
+    position: fixed;
+    top: 0;
+    right: -320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20% 0 0 60%;
+    transition: right .7s cubic-bezier(1, 0, 0, 1);
+}
+
+/* Classe qui s'Ajoutere au clic à la div hamburger-menu */
+.change{
+    right: 0;
+}
+
+/* CSS Pour le logo en mode burger menu pour small device */
+.logoBox{
+    /* border: cadetblue 1px solid; */
+    position: relative;
+    width: 120px;
+    height: 90px;
+    left: 10px;   
+}
+.logoBox img{
+    position: absolute;
+    top: 5px;
+    width: 100% ;
+    height: auto;
+}
+.hamburger-menu{
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 25px;
+    right: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Animation des lignes au clic  */
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(245, 229, 243);
+    transition: all 0.8s;
+    border-radius: 2px;
+}
+.change .line-1{
+    transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+.change .line-2{
+    opacity: 0;
+}
+.change .line-3{
+    transform: rotateZ(405deg) translate(-8px, -6px);
+}
+.nav-list{
+    text-align: right;
+}
+
+.nav-item{
+    list-style: none;
+    margin: 25px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding: 3px 0;
+}
+
+/* Creation pseudo élément et animation au hover sur les anchor*/
+.nav-link::before,
+.nav-link::after{
+    content:"";
+    width: 100%;
+    height: 2px;
+    background-color: #eeb1d0;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.nav-link::after{
+    bottom: 0;
+    transform-origin: right;
+}
+
+.nav-link::before{
+    top: 0;
+    transform-origin: left;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after{
+    transform: scaleX(1);
+}
+
+.nav-link:hover{
+    color: rgb(199, 199, 199);
+}
+
+/* FIN REGLES CSS NAVBAR */
+
+/* CSS pour la div SEARCH AND SHOP (barre de recherche + panier achat) */
+
+.searchAndShop{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 115px;
+    margin-bottom: 20px;
+    /* border: yellow solid 1px; */
+}
+
+#panier{
+    display: flex;
+}
+.searchAndShop img{
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    cursor: pointer;
+    /* transform: scale(1);
+    transition: 0.1s ease-in-out; */
+}
+
+/* .searchAndShop img:hover{
+    transform: scale(1.2);
+} */
+
+
+.searchAndShop input{
+    width: 75%;
+    height: 100%;
+    border-radius: 6px;
+    margin: 0;
+    border: #eeb1d0 solid 1px;
+}
+.search-container{
+    /* border: powderblue 1px solid; */
+    display:flex;
+    margin-left: 5px;
+    height: 30px;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+.search-container button{
+    width: 15%;
+    height: 100%;
+    margin: 0;
+    border: 1px solid #eeb1d0;
+    background-color: #eeb1d0;
+    color: white;
+    border-radius: 4px;
+}
+
+
+.search-container button:hover{
+    border: #eb83b7 solid 1px; 
+    background-color: #eb83b7;  
+}
+
+.search-container button i{
+    font-size: 15px;
+}
+
+#show{
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 15px;   
+}
+#show h4{
+    font-size: 15px;
+}
+#show a{
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.835);
+    text-decoration: none;
+}
+#show a:hover{
+    font-weight: 400;
+}
+
+.infoPanier{
+    margin-right: 10px;
+    justify-content: center;
+}
+
+.infoPanier p{
+    font-size: 12px;
+}
+
+#slogan{
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.92);
+    font-weight: 300;
+    margin-top: 250px;
+}
+#slogan span{
+    color: #eb83b7;
+    font-weight: 400;
+}
+
+
+/* CSS REGLES FOOTER */
+footer{
+    background-color: rgba(0, 0, 0, 0.877);
+    color: white;
+    display: block;
+    /* position: relative; */
+    /* z-index: 1; */
+    /* bottom: 0;
+    left: 0;
+    right: 0;  */
+    padding: 5px;
+    border-radius:  40% 8% 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+footer p{
+    margin: 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 5px;
+}
+footer p span{
+    color: #eb83b7;
+}
+
+#footerSocial a i{
+    font-size: 30px;
+    margin-right:20px;
+    color: white;
+    cursor: pointer;
+}
+
+#footerSocial i:hover{
+    color: #eb83b7;
+}
+
+
+footer img{
+    width: 120px;
+    height: auto;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Media queries pour div searchAndShop (barre de recherche plus panier)*/
+
+@media screen and (min-width: 400px){
+    .search-container{
+        width: 230px;
+    }
+    .searchAndShop img{
+        width: 40px;
+    }
+    .infoPanier p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .search-container{
+        width: 280px;
+        margin-left: 30px;
+    }
+    .searchAndShop img{
+        width: 50px;
+    }
+    .infoPanier p{
+        font-size: 16px;
+    }
+    .infoPanier{
+        margin-right: 30px;
+    }
+}
+
+/* Media queries NavBar */
+
+@media screen and (min-width: 600px){
+    .navContainer{
+        height: 105px;   
+    }
+    .logoBox{
+        width: 130px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .mainNavBar{
+        width: 100%;
+        height: 125px;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        top: 0;
+        left:0;
+        right: 0;
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20% 0 0 60%;
+        transition: right .7s cubic-bezier(1, 0, 0, 1); */
+    }
+    .navContainer{
+        height: 125px;
+    }
+    .nav-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logoBox{
+        width: 160px;
+        height: 130px;
+    }
+    .search-container{
+        width: 300px;
+        margin-left: 50px;
+    }
+    .infoPanier{
+        margin-right: 50px;
+    }
+    .searchAndShop{
+        margin-top: 130px;
+        margin-bottom: 15px;   
+    }
+    .searchAndShop img{
+        transform: scale(1);
+        transition: 0.1s ease-in-out;
+    }
+    
+    .searchAndShop img:hover{
+        transform: scale(1.2);
+    }
+
+    #show{
+        margin-left: 50px;
+        text-transform: uppercase;
+        font-size: 15px;   
+    }
+    #show h4{
+        font-size: 15px;
+    }
+    #show a{
+        letter-spacing: 1px;
+        font-weight: 300;
+        color: rgba(0, 0, 0, 0.835);
+        text-decoration: none;
+    }
+    #show a:hover{
+        font-weight: 400;
+    }
+}

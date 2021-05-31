@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'girassolregular';
+    src: url('../font/girassol-regular-webfont.woff2') format('woff2'),
+         url('../font/girassol-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-image: url("Images/wallpaper.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* pour le responsive */
+    background-attachment: fixed;
+    height:auto;
+}
+.title{ 
+    font-family:girassolregular !important;
+    color: rgb(244, 244, 244)!important;
+    font-weight: bold !important;
+    font-size:45px!important;
+    letter-spacing:2px!important;
+    margin-top: 100px !important;
+    margin-left:20px !important;
+}
+.title1{ 
+    font-family:girassolregular !important;
+    color: rgb(237, 237, 237)!important;
+    font-weight: bold !important;
+    font-size:45px!important;
+    letter-spacing:4px!important;
+    margin-top: 100px !important;
+}
+.input1{
+    background-color:rgba(255, 255, 255, 0.246) !important;
+}
+.input2{
+    margin-top :30px !important;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom,white 0%, #e6b7d6 25%, #d85c9b 100%);
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+}
+.input2:hover{
+    color:rgba(0, 0, 0, 0.66)
+}
+
+
+.image{ 
+    margin-top:100px !important;
+    width:250px;
+}
+.image1{ 
+    margin-top:70px !important;
+    width:40%;
+}
+
+.style{ 
+    color:#d85c9b;
+ 
+}
+.style1{ 
+    margin-top: 30px !important;
+    color:#d85c9b;
+}
+a{ 
+    color:white;
+}
+a:hover{ 
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.653);
+}
+/* .enterButton{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 8px;
+}
+
+.enterButton a{
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+} */
+@media screen and (max-width: 980px){
+    .title {
+        font-size:35px !important;
+        }
+        .title2{
+            font-size:35px !important
+        }
+        .image{
+            width:80% !important;
+        }
+        .image1{
+            width:80% !important;
+        }
+        .style{
+            font-size:10px;
+        }
+        .style1{
+            font-size:10px;
+        }
+    }

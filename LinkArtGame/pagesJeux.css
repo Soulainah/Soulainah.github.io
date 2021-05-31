@@ -1,0 +1,295 @@
+/* body {
+  background-color: #EFEFEF;
+  font-family: 'Roboto', sans-serif;
+} */
+
+/* CSS DU THE PANIER */
+
+#thePanier{
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  height: 100px;
+  background-color: #ededed;
+  visibility: hidden;
+  width: 100%;
+}
+
+#ContainerCart{
+  width: 70%;
+  margin-left: 150px;
+}
+
+#buttonCloseCart{
+  position: absolute;
+  top: 50px;
+  right: 70px;
+}
+#buttonCloseCart svg{
+  color: #d85c9b;
+  cursor: pointer;
+}
+
+h5{
+  font-size: 30px;
+  color: #d85c9b;
+  letter-spacing: 1px;
+  font-weight: 300;
+
+}
+#homepage{
+  visibility: visible;
+}
+
+.pagesJeux{
+  /* border: blue solid 1px; */
+  background-color: #ededed;
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  width: 100%;
+ 
+}
+#pagePC{
+  visibility: hidden;
+}
+#pagePS4{
+  visibility: hidden;
+}
+#pageSwitch{
+  top: 80px;
+  visibility: hidden;
+}
+#pageXbox{
+  visibility: hidden;
+}
+#pageContact{
+  visibility: hidden;
+}
+
+.titrePages{
+color: black;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+h2 span{
+  color: #d85c9b;
+}
+
+.gamePresentation {
+  position: relative;
+}
+
+.gamePictures {
+  width: 70%;
+  height: 8%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.gamePictures:hover{
+  transform: scale(1.1);
+}
+
+.gamePage {
+  position: absolute;
+  left: -100%;
+  top: 15%;
+  -webkit-transition: left 0.5s ease-in-out;
+  transition: left 0.5s ease-in-out;
+  background-color: #1c1c1ce4;
+  color: white;
+  /* font-size: 13px; */
+  border-radius: 15px;
+}
+.gamePage p{
+  font-size: 13px;
+}
+
+.changeGamePage1{
+  top: 130px;
+}
+.changeGamePage2{
+  top: 520px;
+}
+.changeGamePage3{
+  top: 900px;
+}
+.changeGamePage4{
+  top: 1300px;
+}
+.changeGamePage5{
+  top: 1650px;
+}
+.changeGamePage6{
+  top: 1950px;
+}
+.changeGamePage1Switch{
+  top: 130px;
+}
+.changeGamePage2Switch{
+  top: 600px;
+}
+.changeGamePage3Switch{
+  top: 1100px;  
+}
+.changeGamePage4Switch{
+  top: 1600px;
+}
+.changeGamePage5Switch{
+  top: 2100px;
+}
+.changeGamePage6Switch{
+  top: 2350px;  
+}
+
+.rightPart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left{
+  padding: 0;
+  font-size: 14px;
+}
+
+.arrowLeft {
+  width: 30%;
+  height: 10%;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(25%, #e6b7d6), to(#d85c9b));
+  background: linear-gradient(to bottom, white 0%, #e6b7d6 25%, #d85c9b 100%);
+  border-radius: 30px;
+  width: 30%;
+}
+
+@media screen and (min-width: 768px) {
+  h2{
+    font-size: 25px;
+  }
+  .gamePage p{
+    font-size: 15px;
+  }
+  .left {
+    background-color: #8F8F8F;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .arrowLeftMobile {
+    width: 36%;
+    margin-top: 34%;
+    margin-left: 28%;
+    cursor: pointer;
+  }
+  .arrowLeft {
+    width: 40%;
+  }
+
+  .changeGamePage1{
+    top: 150px;
+  }
+  .changeGamePage2{
+    top: 150px;
+  }
+  .changeGamePage3{
+    top: 600px;
+  }
+  .changeGamePage4{
+    top: 600px;
+  }
+  .changeGamePage5{
+    top: 950px;
+  }
+  .changeGamePage6{
+    top: 1000px;
+  }
+  .changeGamePage1Switch{
+    top: 130px;
+  }
+  .changeGamePage2Switch{
+    top: 130px;
+  }
+  .changeGamePage3Switch{
+    top: 720px;  
+  }
+  .changeGamePage4Switch{
+    top: 720px;
+  }
+  .changeGamePage5Switch{
+    top: 1230px;
+  }
+  .changeGamePage6Switch{
+    top: 1230px;
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+  button {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+  .gameImage {
+    width: 65%;
+    padding: 30px;
+  }
+
+  .changeGamePage1{
+    top: 180px;
+  }
+  .changeGamePage2{
+    top: 180px;
+  }
+  .changeGamePage3{
+    top: 180px;
+  }
+  .changeGamePage4{
+    top: 640px;
+  }
+  .changeGamePage5{
+    top: 640px;
+  }
+  .changeGamePage6{
+    top: 640px;
+  }
+  .changeGamePage1Switch{
+    top: 150px;
+  }
+  .changeGamePage2Switch{
+    top: 150px;
+  }
+  .changeGamePage3Switch{
+    top: 150px;  
+  }
+  .changeGamePage4Switch{
+    top: 750px;
+  }
+  .changeGamePage5Switch{
+    top: 750px;
+  }
+  .changeGamePage6Switch{
+    top: 750px;  
+  }
+}

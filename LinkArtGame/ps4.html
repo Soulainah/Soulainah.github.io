@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="pagesJeux.css">
+    <link rel="stylesheet" href="navigation-footer.css">
+    <title>Link'Art Game - Jeux sur PS4</title>
+</head>
+
+<body>
+
+    <!--NAV BAR-->
+
+    <div class="navContainer">
+        <div class="logoBox">
+            <img src="Images/logo.png" alt="logo console de jeu">
+        </div>
+        <nav class="mainNavBar ">
+            <div class="hamburger-menu d-lg-none">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ps4.html" class="nav-link">PS4</a>
+                </li>
+                <li class="nav-item">
+                    <a href="xbox.html" class="nav-link">XBOX</a>
+                </li>
+                <li class="nav-item">
+                    <a href="switch.html" class="nav-link">Switch</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pc.html" class="nav-link">PC</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--FIN NAV BAR-->
+
+    <!--L'ESPACE RECHERCHE INPUT + LE PANIER-->
+    <div class="searchAndShop">
+        <div class="search-container">
+            
+                <input id="searchBar" type="text" placeholder="Search.." name="search">
+                <a href="#" id="refrech" style="color:#eeb1d0;font-weight:bold;text-decoration: none; font-family: tahoma;">X</a>  
+                <button id="buttonSearch"><i class="fa fa-search"></i></button> 
+        </div>
+        
+
+        <div id="panier">
+            <img src="Images/Bourse.png" alt="">
+            <div class="infoPanier d-flex flex-column">
+                <p class="p-0 m-0">Votre panier :</p>
+                <p class="p-0 m-0"><span>0</span> article(s)</p>
+            </div>
+        </div>
+    </div>
+    <div id="show" ></div>
+
+    <!--FIN DE L'ESPACE RECHERCHE INPUT + LE PANIER-->
+
+    <!--TA PAGE HTML ICIIIIIIIIIIIIIIII-->
+
+    <div class="gamePresentation mt-2 mb-5">
+        <h2 class="text-center titrePages">Nos Jeux <span>PS4</span></h2>
+        <div class="container">
+            <div class="row mt-4">
+                <img id="assassinImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+                    src="Images/PS4/Assassins_creed.jpg" alt="image Assasin's creed">
+                <img id="farcryImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+                    src="Images/PS4/Farcry6.jpg" alt="image Farcry">
+                <img id="princeImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+                    src="Images/PS4/Prince_of_Persia.jpg" alt="image Prince of Persia">
+                <img id="residentImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+                    src="Images/PS4/Resident_Evil_7.jpg" alt="image Resident Evil 7">
+                <img id="lastImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+                    src="Images/PS4/The_last_Of_us.jpg" alt="image The last of us">
+                <img id="witcherImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+                    src="Images/PS4/The_witcher.jpg" alt="image The witcher">
+            </div>
+        </div>
+    </div>
+    <!-- Page Assassin's creed -->
+    <div id="ps4Assassin" class="gamePage container text-center ">
+        <div class="row d-flex flex-row p-2">
+            <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                src="Images/FLECHG.png" alt="image de flèche">
+            <div class="col-12 col-md-5 order-md-2">
+                <h2 class="mt-3"><span class="shop-item-title">Assassin's Creed</span></h2>
+                <p>Odyssey</p>
+                <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/PS4/Assassins_creed.jpg"
+                    alt="image du jeu Assassin's creed Odyssey">
+                <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png"
+                    alt="image de flèche">
+            </div>
+            <div class="left col-12 col-md-6 order-md-1">
+                <h2 class="mt-3">Details du jeu</h2>
+                <p>
+                    Écrivez votre propre odyssée et devenez un héros spartiate de légende dans Assassin's Creed®
+                    Odyssey, une aventure où vous forgerez votre destin et tracerez votre chemin dans un univers sur le
+                    point de s'effondrer.
+                </p>
+                <p>
+                    Influez sur l'histoire et découvrez un univers riche et évoluant en permanence en fonction de vos
+                    choix.
+                </p>
+                <h2 class="shop-item-price">69,99</h2>
+                <button class="shop-item-button m-4">Ajouter au Panier</button>
+                 
+            </div>
+        </div>
+    </div>
+    <!-- Page Farcry -->
+    <div id="ps4Farcry" class="gamePage container text-center ">
+        <div class="row d-flex flex-row p-2">
+            <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                src="Images/FLECHG.png" alt="image de flèche">
+            <div class="col-12 col-md-5 order-md-2">
+                <h2 class="mt-3"><span class="shop-item-title">Farcry 6</span></h2>
+                <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/PS4/Farcry6.jpg"
+                    alt="image du jeu Farcry 6">
+                <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png"
+                    alt="image de flèche">
+            </div>
+            <div class="left col-12 col-md-6 order-md-1">
+                <h2 class="mt-3">Details du jeu</h2>
+                <p>
+                    Bienvenue sur Yara, un paradis tropical figé dans le temps. Anton Castillo, dictateur de l'île, est
+                    bien décidé à rendre sa gloire d'antan à la nation, accompagné de son fils Diego qui suit les traces
+                    sanglantes de son père. Leur régime de terreur a déclenché une véritable révolution dans tout le
+                    pays.
+                </p>
+                <p>
+                    COMBATTEZ POUR LA LIBERTÉ
+                </p>
+                <p>
+                    Dani Rojas et devenez un leader révolutionnaire pour libérer votre nation.
+                </p>
+                <p>
+                    YARA, UNE NATION DÉCHIRÉE
+                </p>
+                <p>
+                    Combattez les troupes d'Anton sur le plus grand terrain de jeu de la série Far Cry à ce jour, entre
+                    la jungle, les plages et Esperanza, la capitale de Yara.
+                </p>
+                <p>
+                    GUÉRILLA ET PUISSANCE DE FEU
+                </p>
+                <p>
+                    Utilisez des armes et véhicules de fortune, mais aussi "Amigos", le nouveau système d'animaux
+                    compagnons, pour mettre un terme à la tyrannie.
+                </p>
+                <h2 class="shop-item-price">69,99</h2>
+                <button class="shop-item-button m-4">Ajouter au Panier</button>
+                 
+            </div>
+        </div>
+    </div>
+
+    <!-- Page The Last Of us-->
+    <div id="ps4Last" class="gamePage container text-center">
+        <div class="row d-flex flex-row p-2">
+            <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                src="Images/FLECHG.png" alt="image de flèche">
+            <div class="col-12 col-md-5 order-md-2">
+                <h2 class="mt-3"><span class="shop-item-title">The Last Of Us</span></h2>
+                <p>Remastered</p>
+                <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/PS4/The_last_Of_us.jpg"
+                    alt="image du jeu The Last Of us">
+                <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png"
+                    alt="image de flèche">
+            </div>
+            <div class="left col-12 col-md-6 order-md-1">
+                <h2 class="mt-3">Details du jeu</h2>
+                <p>
+                    Le jeu de toute une génération, remasterisé sur PS4™.
+                    Dans un monde post-pandémique hostile, Joel et Ellie, réunis par un concours de circonstances,
+                    doivent s'entraider pour survivre à un violent périple à travers ce qui reste des États-Unis.
+                </p>
+                <p>Fonctionnalités remastérisées :</p>
+                <ul>
+                    <li>
+                        Explorez un très beau monde décimé, qui prend une nouvelle dimension grâce à la puissance du
+                        système PlayStation®4 en haute définition 1080p.
+                    </li>
+                    <li>
+                        Plongez dans le passé d'Ellie grâce au nouveau prologue en solo, Left Behind.
+                    </li>
+                    <li>
+                        Luttez pour la survie dans les territoires abandonnés et reconquis grâce à huit nouvelles cartes
+                        multijoueur et un mode de difficulté encore plus ardu.
+                    </li>
+                    <li>
+                        Découvrez les coulisses du jeu grâce aux commentaires des acteurs et du directeur artistique.
+                    </li>
+                </ul>
+                <h2 class="shop-item-price">19,99</h2>
+                <button class="shop-item-button m-4">Ajouter au Panier</button>
+                 
+            </div>
+        </div>
+    </div>
+    <!-- Page Prince of Persia -->
+    <div id="ps4Prince" class="gamePage container text-center">
+        <div class="row d-flex flex-row p-2">
+            <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                src="Images/FLECHG.png" alt="image de flèche">
+            <div class="col-12 col-md-5 order-md-2">
+                <h2 class="mt-3"><span class="shop-item-title">Prince Of Persia</span></h2>
+                <p>Les sables du temps</p>
+                <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/PS4/Prince_of_Persia.jpg"
+                    alt="image du jeu Prince Of Persia">
+                <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png"
+                    alt="image de flèche">
+            </div>
+            <div class="left col-12 col-md-6 order-md-1">
+                <h2 class="mt-3">Details du jeu</h2>
+                <p>
+                    Au cœur des sables brûlants de la Perse ancienne, il existe une légende antique, née lors d'une
+                    époque dominée par le mensonge et le sang. Attiré par les sombres pouvoirs d'une Dague magique, un
+                    jeune prince s'apprête à déchaîner un pouvoir maléfique sur son royaume prospère.
+                </p>
+                <p>
+                    Initialement sorti en 2003, Prince of Persia : Les Sables du Temps a marqué les joueurs du monde
+                    entier grâce à son gameplay innovant, son histoire captivante et ses personnages charismatiques !
+                    Débloquez Prince of Persia, le jeu original de 1989 au fil de vos aventures et accédez-y quand vous
+                    le désirez depuis le menu principal.
+                </p>
+                <h2 class="shop-item-price">69,99</h2>
+                <button class="shop-item-button m-4">Ajouter au Panier</button>
+                 
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Resident Evil 7 -->
+    <div id="ps4Resident" class="gamePage container text-center">
+        <div class="row d-flex flex-row p-2">
+            <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                src="Images/FLECHG.png" alt="image de flèche">
+            <div class="col-12 col-md-5 order-md-2">
+                <h2 class="mt-3"><span class="shop-item-title">Resident Evil 7</span></h2>
+                <p>Biohazard</p>
+                <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/PS4/Resident_Evil_7.jpg"
+                    alt="image du jeu Resident Evil 7">
+                <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png"
+                    alt="image de flèche">
+            </div>
+            <div class="left col-12 col-md-6 order-md-1">
+                <h2 class="mt-3">Details du jeu</h2>
+                <p>
+                    Le danger et l'isolement menacent derrière les murs vétustes d'une ferme abandonnée d'Amérique du
+                    Sud... '7' marque le renouveau du jeu de survie et propose une perspective inédite pour le joueur
+                    avec la glaçante et captivante 'vue isolée'.
+                </p>
+                <p>
+                    Portée par l'innovant moteur RE, l'horreur atteint de nouveaux sommets de réalisme dont vous ne
+                    pourrez pas vous détourner. Entrez dans un monde terrifiant et restez en vie. </p>
+                <h2 class="shop-item-price">49,99</h2>
+                <button class="shop-item-button m-4">Ajouter au Panier</button>
+                 
+            </div>
+        </div>
+    </div>
+    <!-- Page The Witcher -->
+    <div id="ps4Witcher" class="gamePage container text-center">
+        <div class="row d-flex flex-row p-2">
+            <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                src="Images/FLECHG.png" alt="image de flèche">
+            <div class="col-12 col-md-5 order-md-2">
+                <h2 class="mt-3"><span class="shop-item-title">The Witcher</span></h2>
+                <p>Wild Hunt</p>
+                <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/PS4/The_witcher.jpg"
+                    alt="image du jeu The witcher III">
+                <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png"
+                    alt="image de flèche">
+            </div>
+            <div class="left col-12 col-md-6 order-md-1">
+                <h2 class="mt-3">Details du jeu</h2>
+                <p>
+                    Incarnez un sorceleur, l'un des derniers exterminateurs de monstres.
+                </p>
+                <p>
+                    Voyagez à travers des royaumes ravagés par la guerre afin de retrouver l'enfant de la prophétie,
+                    véritable arme capable de semer la destruction. </p>
+                <h2 class="shop-item-price">69,99</h2>
+                <button class="shop-item-button m-4">Ajouter au Panier</button>
+                 
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Assets/JS/main.js"></script>
+
+
+
+
+
+
+
+    <!--FIN DE TA PAGE HTML-->
+
+
+    <p id="slogan"><span>GAMES</span> ARE <span>ART</span> ! LET'S BRING SOME ART IN OUR <span>LIFE</span> !</p>
+    <!--LE FOOTER-->
+    <footer>
+        <div id="footerLogo"><img src="Images/logo.png" alt="logo console de jeu"></div>
+        <div id="footerSocial">
+            <a href="#" role="button"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" role="button"><i class="fab fa-instagram"></i></a>
+            <a href="#" role="button"><i class="fab fa-twitter"></i></a>
+
+        </div>
+        <div id="copyright">
+            <p>&copy;&nbsp;&nbsp;2021&nbsp;Link'Art Game&nbsp;</p>
+            <p>Construit par la <span>team Descodeuses</span></p>
+            <p>Nella, Faiza, Soulainah et Adèle</p>
+        </div>
+    </footer>
+
+
+
+    <script src="Assets/dist/jquery.js"></script>
+    <script src="panier.js"></script>
+    <script src="searchBar.js"></script>
+    <script type="text/javascript" src="pagesJeux.js"></script>
+    <script src="navigation.js"></script>
+
+</body>
+
+</html>

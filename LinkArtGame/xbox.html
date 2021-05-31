@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="pagesJeux.css">
+    <link rel="stylesheet" href="navigation-footer.css">
+    <title>Link'Art Game - Jeux sur XBOX</title>
+</head>
+
+<body>
+
+    <!--NAV BAR-->
+
+    <div class="navContainer">
+        <div class="logoBox">
+            <img src="Images/logo.png" alt="logo console de jeu">
+        </div>
+        <nav class="mainNavBar ">
+            <div class="hamburger-menu d-lg-none">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ps4.html" class="nav-link">PS4</a>
+                </li>
+                <li class="nav-item">
+                    <a href="xbox.html" class="nav-link">XBOX</a>
+                </li>
+                <li class="nav-item">
+                    <a href="switch.html" class="nav-link">Switch</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pc.html" class="nav-link">PC</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--FIN NAV BAR-->
+
+    <!--L'ESPACE RECHERCHE INPUT + LE PANIER-->
+    <div class="searchAndShop">
+        <div class="search-container">
+            
+                <input id="searchBar" type="text" placeholder="Search.." name="search">
+                <a href="#" id="refrech" style="color:#eeb1d0;font-weight:bold;text-decoration: none; font-family: tahoma;">X</a>  
+                <button id="buttonSearch"><i class="fa fa-search"></i></button> 
+        </div>
+        
+
+        <div id="panier">
+            <img src="Images/Bourse.png" alt="">
+            <div class="infoPanier d-flex flex-column">
+                <p class="p-0 m-0">Votre panier :</p>
+                <p class="p-0 m-0"><span>0</span> article(s)</p>
+            </div>
+        </div>
+    </div>
+    <div id="show" ></div>
+
+    <!--FIN DE L'ESPACE RECHERCHE INPUT + LE PANIER-->
+
+    <!--TA PAGE HTML ICIIIIIIIIIIIIIIII-->
+
+<div class="gamePresentation mt-2 mb-5">
+    <h2 class="text-center titrePages">Nos Jeux <span>Xbox</span></h2>
+    <div class="container">
+        <div class="row mt-4">
+            <img id="assassinImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4" src="Images/XBOX/AssassinXbox.jpg" alt="image Assassin's Creed Valhalla">
+            <img id="redImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4" src="Images/XBOX/Red_dead_Redemption.jpg" alt="image Red dead Redemption">
+            <img id="dbzImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4" src="Images/XBOX/DBZ.jpg" alt="image Dragon Ball Z">
+            <img id="gearImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4" src="Images/XBOX/Gears5.jpg" alt="Gears 5">
+            <img id="gtaImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4" src="Images/XBOX/GTA5.jpg" alt="image GTA 5">
+            <img id="narutoImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4" src="Images/XBOX/Naruto.jpg" alt="image Naruto">
+        </div>
+    </div>
+</div>
+
+<!-- Page Assassin's Creed Valhalla -->
+<div id="xboxAssassin" class="gamePage container text-center">
+    <div class="row d-flex flex-row p-2">
+        <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                src="Images/FLECHG.png" alt="image de flèche">
+        <div class="col-12 col-md-5 order-md-2">
+            <h2 class="mt-3"><span class="shop-item-title">Assassin's Creed</span></h2>
+            <p>Valhalla</p>
+            <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1"src="Images/XBOX/AssassinXbox.jpg" alt="image du jeu Assassin's Creed Valhalla">
+            <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png" alt="image de flèche">
+        </div>
+        <div class="left col-12 col-md-6 order-md-1">
+            <h2 class="mt-3">Details du jeu</h2>
+            <p>
+                Dans Assassin's Creed® Valhalla, vous incarnerez Eivor, redoutable Viking dont l'esprit a été bercé, dès sa plus tendre enfance, par de glorieux récits de combats. Vous explorerez un dynamique et splendide monde ouvert situé dans la violente Angleterre médiévale des Âges obscurs. 
+            </p>
+            <p>
+                Vous mènerez des raids contre vos ennemis, ferez prospérer votre peuple, et affermirez votre pouvoir politique en vue de vous assurer une place parmi les dieux, au Valhalla.
+            </p>
+            <h2 class="shop-item-price">69,99</h2>
+                <button class="shop-item-button m-4">Ajouter au Panier</button>
+             
+        </div>
+    </div>
+</div>
+<!-- Page Dragon Ball Z -->
+<div id="xboxDbz" class="gamePage container text-center">
+    <div class="row d-flex flex-row p-2">
+        <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto" src="Images/FLECHG.png" alt="image de flèche">
+        <div class="col-12 col-md-5 order-md-2">
+            <h2 class="mt-3"><span class="shop-item-title">Dragon Ball Z</span></h2>
+            <p>Kakarot</p>
+            <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/XBOX/DBZ.jpg" alt="image du jeu Dragon Ball Z">
+            <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png" alt="image de flèche">
+        </div>
+        <div class="left col-12 col-md-6 order-md-1">
+            <h2 class="mt-3">Details du jeu</h2>
+            <p>
+                Revivez l'histoire de Goku dans Dragon Ball Z : Kakarot ! Menez des combats épiques et découvrez la vie dans le monde de Dragon Ball Z : combattez, pêchez, mangez et entraînez-vous avec Goku. Au cours de votre progression dans l'histoire, explorez de nouvelles zones, vivez de nouvelles aventures et tissez des liens étroits avec d'autres héros de l'univers de Dragon Ball Z.
+            </p>
+            <ul>
+                <li>
+                    <b>Découvrez l'histoire de Dragon Ball Z:</b> grâce à des événements épiques et à des quêtes secondaires amusantes. En outre, des moments inédits de l'histoire répondront pour la toute première fois à certaines questions brûlantes que tout le monde se pose sur l'univers de Dragon Ball !
+                </li>
+                <li>
+                    <b>Livrez des combats emblématiques à une échelle encore inégalée.        </b>
+                    Luttez sur de vastes champs de bataille à l'environnement destructible et repoussez vos limites en affrontant des boss lors de combats épiques. Augmentez votre niveau de puissance et relevez de grands défis !
+                </li>
+            </ul>   
+            <h2 class="shop-item-price">39,99</h2>
+            <button class="shop-item-button m-4">Ajouter au Panier</button>
+             
+        </div>
+    </div>
+</div>
+<!-- Page Gear 5 -->
+<div id="xboxGear" class="gamePage container text-center">
+    <div class="row d-flex flex-row p-2">
+        <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto" src="Images/FLECHG.png" alt="image de flèche">
+        <div class="col-12 col-md-5 order-md-2">
+            <h2 class="mt-3"><span class="shop-item-title">Gear 5</span></h2>
+            <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/XBOX/Gears5.jpg" alt="image du jeu Gear 5">
+            <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png" alt="image de flèche">
+        </div>
+        <div class="left col-12 col-md-6 order-md-1">
+            <h2 class="mt-3">Details du jeu</h2>
+            <p>
+                Campagne : A l’approche d’une guerre totale, Kait Diaz se détache pour divulguer sa connexion avec l’ennemi et découvrir les vrais dangers de Sera elle-même.
+            </p>
+            <p>
+                Escape : Un nouveau mode agressif et risqué en commando suicide de 3 joueurs qui doivent travailler ensemble pour attaquer de l’intérieur les ruches ennemies.
+            </p>
+            <p>
+                Versus : Que la meilleure équipe gagne ! Avec plus de 10 types de jeux sur de nouvelles et d’anciennes cartes. Le versus récompense chaque style de jeu, du joueur débutant au pro-gamer.
+            </p>
+            <p>
+                Horde : Résiste à 50 vagues d’ennemis de plus en plus puissants en utilisant les compétences des héros, en construisant des défenses, en récoltant des pouvoirs, en augmentant ton niveau de jeu et en agissant en équipe.
+            </p>
+            <p>
+                Créateur de carte : Crée des cartes personnalisées pour le mode Escape et teste-les en les partageant et en défiant tes amis.   
+            </p>
+            <h2 class="shop-item-price">39,99</h2>
+            <button class="shop-item-button m-4">Ajouter au Panier</button>
+             
+        </div>
+    </div>
+</div>
+<!-- Page GTA -->
+<div id="xboxGta" class="gamePage container text-center">
+    <div class="row d-flex flex-row p-2">
+        <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto" src="Images/FLECHG.png" alt="image de flèche">
+        <div class="col-12 col-md-5 order-md-2">
+            <h2 class="mt-3"><span class="shop-item-title">Grand Theft Auto V</span></h2>
+            <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/XBOX/GTA5.jpg" alt="image du jeu GTA 5">
+            <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png" alt="image de flèche">
+        </div>
+        <div class="left col-12 col-md-6 order-md-1">
+            <h2 class="mt-3">Details du jeu</h2>
+            <p>
+                Los Santos : une métropole tentaculaire avec ses gourous, ses starlettes et ses célébrités déchues qui faisait jadis rêver le monde entier, mais qui lutte à présent pour ne pas sombrer dans l'oubli alors que le pays est rongé par la crise et la téléréalité bas de gamme. Au milieu de ce chaos ensoleillé, trois criminels très différents vont risquer le tout pour le tout dans une série de braquages aussi spectaculaires que dangereux.
+            </p>
+            <h2 class="shop-item-price">35,99</h2>
+            <button class="shop-item-button m-4">Ajouter au Panier</button>
+             
+        </div>
+    </div>
+</div>
+<!-- Page Naruto -->
+<div id="xboxNaruto" class="gamePage container text-center">
+    <div class="row d-flex flex-row p-2">
+        <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto" src="Images/FLECHG.png" alt="image de flèche">
+        <div class="col-12 col-md-5 order-md-2">
+            <h2 class="mt-3"><span class="shop-item-title">Naruto Storm 4</span>
+            </h2>
+            <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/XBOX/Naruto.jpg" alt="image du jeu Naruto Storm 4">
+            <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png" alt="image de flèche">
+        </div>
+        <div class="left col-12 col-md-6 order-md-1">
+            <h2 class="mt-3">Details du jeu</h2>
+            <p>
+                Naruto Shippuden Ultimate Ninja Storm 4 est un jeu de combat inspiré du manga et de l'anime japonais Naruto. Le mode Histoire permet de revivre les derniers événements du manga, dans des combats à contre un ou à trois contre trois, ou face à d'énormes boss.
+            </p>
+            <p>
+                Le jeu dispose également de plusieurs modes de jeu online et offline, qui permettent d'utiliser à volonté la centaine de personnages jouables.
+            </p>
+            <h2 class="shop-item-price">49,99</h2>
+            <button class="shop-item-button m-4">Ajouter au Panier</button>
+             
+        </div>
+    </div>
+</div>
+<!-- Page Red Dead Redemption II -->
+<div id="xboxRed" class="gamePage container text-center">
+    <div class="row d-flex flex-row p-2">
+        <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto" src="Images/FLECHG.png" alt="image de flèche">
+        <div class="col-12 col-md-5 order-md-2">
+            <h2 class="mt-3"><span class="shop-item-title">Red Dead Redemption II</span></h2>
+            <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/XBOX/Red_dead_Redemption.jpg" alt="image du jeu Red Dead Redemption II">
+            <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png" alt="image de flèche">
+        </div>
+        <div class="left col-12 col-md-6 order-md-1">
+            <h2 class="mt-3">Details du jeu</h2>
+            <p>
+                Amérique, 1899. Alors que des justiciers traquent les derniers gangs de hors-la-loi, la période du Far West touche à sa fin. Ceux qui refusent de se rendre sont tués.
+            </p>
+            <p>
+                Après un cambriolage qui a très mal tourné dans la ville de Blackwater, Arthur Morgan et le gang Van der Linde sont obligés de s'enfuir. Avec les agents fédéraux et les meilleurs chasseurs de primes du pays à ses trousses, le gang doit se livrer à des vols et des cambriolages, et se battre pour rejoindre le cœur des terres sauvages des États-Unis pour survivre. Alors que le gang risque de se déchirer à cause de divisions internes, Arthur doit choisir entre ses idéaux et sa loyauté envers le gang qui l'a soutenu.
+            </p>
+            <h2 class="shop-item-price">27,99</h2>
+            <button class="shop-item-button m-4">Ajouter au Panier</button>
+             
+        </div>
+    </div>
+</div>
+
+    <!--FIN DE TA PAGE HTML-->
+
+
+    <p id="slogan"><span>GAMES</span> ARE <span>ART</span> ! LET'S BRING SOME ART IN OUR <span>LIFE</span> !</p>
+    <!--LE FOOTER-->
+    <footer>
+        <div id="footerLogo"><img src="Images/logo.png" alt="logo console de jeu"></div>
+        <div id="footerSocial">
+            <a href="#" role="button"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" role="button"><i class="fab fa-instagram"></i></a>
+            <a href="#" role="button"><i class="fab fa-twitter"></i></a>
+
+        </div>
+        <div id="copyright">
+            <p>&copy;&nbsp;&nbsp;2021&nbsp;Link'Art Game&nbsp;</p>
+            <p>Construit par la <span>team Descodeuses</span></p>
+            <p>Nella, Faiza, Soulainah et Adèle</p>
+        </div>
+    </footer>
+
+
+
+    <script src="Assets/dist/jquery.js"></script>
+    <script src="panier.js"></script>
+    <script src="searchBar.js"></script>
+    <script type="text/javascript" src="pagesJeux.js"></script>
+    <script src="navigation.js"></script>
+
+</body>
+
+</html>

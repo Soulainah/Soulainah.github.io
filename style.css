@@ -112,9 +112,21 @@ li img {
 .textepres {
     font-size: 20px;
     }
+.textepres p {
+    padding-top: 5%;
+}
 .photoprofil {
-    width: 90%;
+    width: 80%;
     }
+.passion img {
+    margin-left: 5%;
+    width: 10%;
+    cursor: pointer;
+}
+.passion p {
+    margin-top: 2%;
+    font-size: 20px;
+}
 /*Guillemets*/
 blockquote {
     font-size: 1em;

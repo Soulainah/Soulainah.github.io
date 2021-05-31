@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="pagesJeux.css">
+    <link rel="stylesheet" href="navigation-footer.css">
+    <title>Link'Art Game - Jeux sur Switch</title>
+</head>
+
+<body>
+
+    <!--NAV BAR-->
+
+    <div class="navContainer">
+        <div class="logoBox">
+            <img src="Images/logo.png" alt="logo console de jeu">
+        </div>
+        <nav class="mainNavBar ">
+            <div class="hamburger-menu d-lg-none">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ps4.html" class="nav-link">PS4</a>
+                </li>
+                <li class="nav-item">
+                    <a href="xbox.html" class="nav-link">XBOX</a>
+                </li>
+                <li class="nav-item">
+                    <a href="switch.html" class="nav-link">Switch</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pc.html" class="nav-link">PC</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--FIN NAV BAR-->
+
+    <!--L'ESPACE RECHERCHE INPUT + LE PANIER-->
+    <div class="searchAndShop">
+        <div class="search-container">
+            
+                <input id="searchBar" type="text" placeholder="Search.." name="search">
+                <a href="#" id="refrech" style="color:#eeb1d0;font-weight:bold;text-decoration: none; font-family: tahoma;">X</a>  
+                <button id="buttonSearch"><i class="fa fa-search"></i></button> 
+        </div>
+        
+
+        <div id="panier">
+            <img src="Images/Bourse.png" alt="">
+            <div class="infoPanier d-flex flex-column">
+                <p class="p-0 m-0">Votre panier :</p>
+                <p class="p-0 m-0"><span>0</span> article(s)</p>
+            </div>
+        </div>
+    </div>
+    <div id="show" ></div>
+
+    <!--FIN DE L'ESPACE RECHERCHE INPUT + LE PANIER-->
+
+    <!--TA PAGE HTML ICIIIIIIIIIIIIIIII-->
+
+    <div class="gamePresentation mt-2 mb-5">
+        <h2 class="text-center titrePages">Nos Jeux <span>Switch</span></h2>
+        <div class="container">
+            <div class="row mt-4">
+                <img id="animalImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+                    src="Images/Switch/Animal_Crossing.jpg" alt="image Animal crossing">
+                <img id="crashImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+                    src="Images/Switch/Crash_Bandicoot.jpeg" alt="image Crash Bandicoot">
+                <img id="marioImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+                    src="Images/Switch/Mario_Odyssey.jpg" alt="image Mario Odyssey">
+                <img id="monsterImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+                    src="Images/Switch/Monster_Hunter.jpg" alt="image Monster hunter">
+                <img id="pokemonImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+                    src="Images/Switch/Pokemon_Snap.jpg" alt="image Pokémon Snap">
+                <img id="zeldaImage" class="gamePictures col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+                    src="Images/Switch/Zelda.jpg" alt="image Zelda">
+            </div>
+        </div>
+    </div>
+    <!-- Page Animal Crossing -->
+    <div id="switchAnimal" class="gamePage container text-center">
+        <div class="row d-flex flex-row p-5">
+            <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                src="Images/FLECHG.png" alt="image de flèche">
+            <div class="col-12 col-md-5 order-md-2">
+                <h2 class="mt-3"><span class="shop-item-title">Animal Crossing</span></h2>
+                <p>New Horizons</p>
+                <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/Switch/Animal_Crossing.jpg"
+                    alt="image du jeu Animal Crossing">
+                <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png"
+                    alt="image de flèche">
+            </div>
+            <div class="left col-12 col-md-6 order-md-1">
+                <h2 class="mt-3">Details du jeu</h2>
+                <p>
+                    Animal Crossing est un « jeu » dans lequel on incarne un petit personnage à personnaliser en début
+                    de partie, et qui va devoir s'installer dans un tout nouvel environnement, en prenant le soin
+                    d'optimiser sa propre qualité de vie, mais aussi celle des autres personnages. Attraper des
+                    papillons, pêcher dans les rivières du coin, meubler sa demeure, fabriquer des objets, arroser les
+                    fleurs du jardin, collectionner des Clochettes (la monnaie du jeu), faire ami-ami avec le voisinage.
+                </p>
+                <p>
+                    Pour cet épisode New Horizons, Nintendo invite les joueurs à partir sur une île (presque) déserte,
+                    avec la responsabilité, en tant que Délégué Insulaire, d'insuffler de la vie dans ce petit coin de
+                    nature. Dans un premier temps, on a accès à une petite partie de l'île, et il faudra décider de
+                    planter sa tente à tel ou tel endroit, mais on peut aussi aider les autres aventuriers à s'installer
+                    si on le souhaite. Le tout est évidemment guidé par l'indémodable Tom Nook, lequel donnera de
+                    précieux conseils, et permettra également de façonner de nouveaux outils, d'acheter des objets.
+                </p>
+                <h2 class="shop-item-price">49,99</h2>
+                <button class="shop-item-button m-4">Ajouter au Panier</button>
+                 
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Crash Bandicoot -->
+    <div id="switchCrash" class="gamePage container text-center">
+        <div class="row d-flex flex-row p-5">
+            <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                src="Images/FLECHG.png" alt="image de flèche">
+            <div class="col-12 col-md-5 order-md-2">
+                <h2 class="mt-3"><span class="shop-item-title">Crash Bandicoot 4</span></h2>
+                <p>It's About Time</p>
+                <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/Switch/Crash_Bandicoot.jpeg"
+                    alt="image du jeu Crash Bandicoot 4">
+                <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png"
+                    alt="image de flèche">
+            </div>
+            <div class="left col-12 col-md-6 order-md-1">
+                <h2 class="mt-3">Details du jeu</h2>
+                <p>
+                    Il est temps de découvrir une toute nouvelle aventure Crash Bandicoot™ bondissante ! Lancez-vous
+                    dans une épopée qui défie le temps et l'espace avec vos marsupiaux préférés.
+                </p>
+                <p>
+                    Neo Cortex et N. Tropy font à nouveau parler d'eux, en tentant de s'emparer non seulement de cet
+                    univers, mais de tout le multivers ! Crash et Coco sont là pour les arrêter, en rassemblant les
+                    quatre masques quantiques, et en changeant les règles de la réalité.
+                </p>
+                <p>
+                    Nouvelles compétences ? Oui. Plus de personnages jouables ? Tout à fait. Des dimensions alternatives
+                    ? Évidemment. Des boss ridicules ? Forcément. Une sauce fantastique ? Parfaite pour vos nuggets de
+                    jort. Eh, ça existe les jorts ? Pas dans cet univers !
+                </p>
+                <h2 class="shop-item-price">52,99</h2>
+                <button class="shop-item-button m-4">Ajouter au Panier</button>
+                 
+            </div>
+        </div>
+    </div>
+    <!-- Page Super Mario Odyssey -->
+    <div id="switchMario" class="gamePage container text-center">
+        <div class="row d-flex flex-row p-5">
+            <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                src="Images/FLECHG.png" alt="image de flèche">
+            <div class="col-12 col-md-5 order-md-2">
+                <h2 class="mt-3"><span class="shop-item-title">Super Mario</span></h2>
+                <p>Odyssey</p>
+                <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/Switch/Mario_Odyssey.jpg"
+                    alt="image du jeu Super Mario Odyssey">
+                <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png"
+                    alt="image de flèche">
+            </div>
+            <div class="left col-12 col-md-6 order-md-1">
+                <h2 class="mt-3">Details du jeu</h2>
+                <p>
+                    Super Mario Odyssey est un jeu de plate-forme sur Switch où la princesse Peach a été enlevée par
+                    Bowser. Pour la sauver, Mario quitte le royaume Champignon à bord de l'Odyssey.
+                </p>
+                <p>
+                    Accompagné de Chappy, son chapeau vivant, il doit parcourir différents royaumes et faire tout pour
+                    vaincre, une nouvelle fois, le terrible Bowser.
+                </p>
+                <h2 class="shop-item-price">59,99</h2>
+                <button class="shop-item-button m-4">Ajouter au Panier</button>
+                 
+            </div>
+        </div>
+    </div>
+    <!-- Page Monster Hunter-->
+    <div id="switchMonster" class="gamePage container text-center">
+        <div class="row d-flex flex-row p-5">
+            <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                src="Images/FLECHG.png" alt="image de flèche">
+            <div class="col-12 col-md-5 order-md-2">
+                <h2 class="mt-3"><span class="shop-item-title">Monster Hunter</span></h2>
+                <p>Rise</p>
+                <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/Switch/Monster_Hunter.jpg"
+                    alt="image du jeu Monster Hunter">
+                <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png"
+                    alt="image de flèche">
+            </div>
+            <div class="left col-12 col-md-6 order-md-1">
+                <h2 class="mt-3">Details du jeu</h2>
+                <p>
+                    Véritable phénomène international, la saga MONSTER HUNTER prend place sur Nintendo Switch ! Que ce
+                    soit pour ses combats dynamiques contre des monstres impressionnants ou pour ses phases
+                    d’exploration dans un monde gigantesque, les vétérans de la franchise comme les nouveaux venus
+                    seront comblés.
+                </p>
+                <p>
+                    Le pittoresque village féodal de Kamura, fort d’une culture unique et de toutes nouvelles
+                    technologies de chasse, est de nouveau menacé par une invasion de monstres. Ce phénomène inexpliqué,
+                    appelé la Calamité, a traumatisé et presque ravagé le village il y a 50 ans ; les forteresses se
+                    dressent, les habitants vivent dans la peur. Vous êtes réquisitionné pour défendre le village et
+                    apprendre la voie de la Chasse ! Avec votre monture Chumsky, et un insecte spécial nommé Filoptère,
+                    lancez-vous dans l’exploration d’un monde à l’écosystème riche, de ses plaines jusque dans ses plus
+                    secrètes hauteurs, et traquez les monstres les plus impressionnants, en solo ou jusqu’à 4 joueurs !
+                </p>
+                <h2 class="shop-item-price">44,99</h2>
+                <button class="shop-item-button m-4">Ajouter au Panier</button>
+                 
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Pokémon Snap -->
+    <div id="switchPokemon" class="gamePage container text-center">
+        <div class="row d-flex flex-row p-5">
+            <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                src="Images/FLECHG.png" alt="image de flèche">
+            <div class="col-12 col-md-5 order-md-2">
+                <h2 class="mt-3"><span class="shop-item-title">Pokémon Snap</span></h2>
+                <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1"src="Images/Switch/Pokemon_Snap.jpg"
+                    alt="image du jeu Pokémon Snap">
+                <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png"
+                    alt="image de flèche">
+            </div>
+            <div class="left col-12 col-md-6 order-md-1">
+                <h2 class="mt-3">Details du jeu</h2>
+                <p>
+                    Devenez le meilleur… photographe Pokémon !
+                </p>
+                <p>
+                    Et si au lieu d’attraper les Pokémon, vous les preniez en photo ? Sorti en 2000 sur Nintendo 64,
+                    Pokémon Snap a bien changé et fait place à une toute nouvelle édition, New Pokémon Snap, pour
+                    Nintendo Switch et Nintendo Switch Lite.
+                </p>
+                <p>
+                    Votre objectif : partir en exploration dans des environnements magnifiques avec pour seul outil,
+                    votre appareil photo ! Les Pokémon sont partout, regardez bien autour de vous : un Roucool dans le
+                    ciel, un Flambino qui court, un Pikachu caché dans les fourrés ! Guidez votre camera avec les
+                    joystick ou le gyroscope et prenez autant de clichés que vous le souhaitez ! A l’issue de votre
+                    expédition safari, le Professeur jugera vos photos selon le cadrage, l’angle et l’action du Pokémon
+                    ; à vous de remplir votre Photodex de photos pour récolter le plus de points ! Il y a plus de 200
+                    Pokémon à découvrir dans leur habitat naturel pour des sessions de jeu relaxantes teintées d’un brin
+                    de nostalgie pour les fans de la première heure.
+                </p>
+                <h2 class="shop-item-price">59,99</h2>
+                <button class="shop-item-button m-4">Ajouter au Panier</button>
+                 
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Zelda -->
+    <div id="switchZelda" class="gamePage container text-center">
+        <div class="row d-flex flex-row p-5">
+            <img class="arrowLeft d-block d-md-none d-xl-block img-fluid col-md-1 order-md-3 mt-auto mb-auto"
+                src="Images/FLECHG.png" alt="image de flèche">
+            <div class="col-12 col-md-5 order-md-2">
+                <h2 class="mt-3"><span class="shop-item-title">The Legend Of Zelda</span></h2>
+                <p>Skyward Sword</p>
+                <img class="shop-item-image gameImage img-fluid col-6 col-md-9 mt-md-3 mt-lg-1" src="Images/Switch/Zelda.jpg"
+                    alt="image du jeu The Legend Of Zelda">
+                <img class="arrowLeftMobile d-none d-md-block d-xl-none" src="Images/FLECHG.png"
+                    alt="image de flèche">
+            </div>
+            <div class="left col-12 col-md-6 order-md-1">
+                <h2 class="mt-3">Details du jeu</h2>
+                <p>
+                    Armé de son épée et de son bouclier, Link va embarquer pour une aventure épique et devra se tenir
+                    prêt à croiser
+                    le fer avec de redoutables ennemis, résoudre des énigmes et parcourir les cieux à dos de célestrier.
+                    Le jeu propose
+                    deux types de commande : jouez avec deux manettes Joy‐Con pour contrôler l'arsenal de Link avec la
+                    reconnaissance de mouvements comme dans le jeu d’origine, ou avec des commandes plus classiques pour
+                    vous
+                    permettre de profiter du jeu en mode portable ou sur une Nintendo Switch Lite.
+                </p>
+                <h2 class="shop-item-price">59,99</h2>
+                <button class="shop-item-button m-4">Ajouter au Panier</button>
+                 
+            </div>
+        </div>
+    </div>
+
+    <!--FIN DE TA PAGE HTML-->
+
+
+    <p id="slogan"><span>GAMES</span> ARE <span>ART</span> ! LET'S BRING SOME ART IN OUR <span>LIFE</span> !</p>
+    <!--LE FOOTER-->
+    <footer>
+        <div id="footerLogo"><img src="Images/logo.png" alt="logo console de jeu"></div>
+        <div id="footerSocial">
+            <a href="#" role="button"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" role="button"><i class="fab fa-instagram"></i></a>
+            <a href="#" role="button"><i class="fab fa-twitter"></i></a>
+
+        </div>
+        <div id="copyright">
+            <p>&copy;&nbsp;&nbsp;2021&nbsp;Link'Art Game&nbsp;</p>
+            <p>Construit par la <span>team Descodeuses</span></p>
+            <p>Nella, Faiza, Soulainah et Adèle</p>
+        </div>
+    </footer>
+
+
+
+    <script src="Assets/dist/jquery.js"></script>
+    <script src="panier.js"></script>
+    <script src="searchBar.js"></script>
+    <script type="text/javascript" src="pagesJeux.js"></script>
+    <script src="navigation.js"></script>
+
+</body>
+
+</html>
